@@ -1,0 +1,59 @@
+# flibbertigibbet, glopp, fritz, zibbo, flump
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not glopp
+W0_noun: not glopp
+W0_sentence: a flibbertigibbet is not glopp
+W0_wherepartial: are not glopp
+W0_wheresentence: those who are not glopp
+W1: is glopp
+W1_noun: glopp
+W1_sentence: a flibbertigibbet is glopp
+W1_wherepartial: are glopp
+W1_wheresentence: those who are glopp
+Wname: glopp
+X0: is not fritz
+X0_noun: not fritz
+X0_sentence: a flibbertigibbet is not fritz
+X0_sentence_condition: if the flibbertigibbet was not fritz instead of fritz
+X0_wherepartial: are not fritz
+X0_wheresentence: those who are not fritz
+X1: is fritz
+X1_noun: fritz
+X1_sentence: a flibbertigibbet is fritz
+X1_sentence_condition: if the flibbertigibbet was fritz instead of not fritz
+X1_wherepartial: are fritz
+X1_wheresentence: those who are fritz
+Xname: fritz
+Y0: is not zibbo
+Y0_noun: not zibbo
+Y0_sentence: a flibbertigibbet is not zibbo
+Y0_wherepartial: are not zibbo
+Y0_wheresentence: those who are not zibbo
+Y1: is zibbo
+Y1_noun: zibbo
+Y1_sentence: a flibbertigibbet is zibbo
+Y1_wherepartial: are zibbo
+Y1_wheresentence: those who are zibbo
+Yname: zibbo
+Z0: is not flump
+Z0_noun: not flump
+Z0_sentence: a flibbertigibbet is not flump
+Z0_wherepartial: are not flump
+Z0_wheresentence: those who are not flump
+Z1: is flump
+Z1_noun: flump
+Z1_sentence: a flibbertigibbet is flump
+Z1_wherepartial: are flump
+Z1_wheresentence: those who are flump
+Zname: flump
+

@@ -1,0 +1,59 @@
+# zingledrop, snerp, plizz, brifft, flurnt
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not snerp
+W0_noun: not snerp
+W0_sentence: a zingledrop is not snerp
+W0_wherepartial: are not snerp
+W0_wheresentence: those who are not snerp
+W1: is snerp
+W1_noun: snerp
+W1_sentence: a zingledrop is snerp
+W1_wherepartial: are snerp
+W1_wheresentence: those who are snerp
+Wname: snerp
+X0: is not plizz
+X0_noun: not plizz
+X0_sentence: a zingledrop is not plizz
+X0_sentence_condition: if the zingledrop was not plizz instead of plizz
+X0_wherepartial: are not plizz
+X0_wheresentence: those who are not plizz
+X1: is plizz
+X1_noun: plizz
+X1_sentence: a zingledrop is plizz
+X1_sentence_condition: if the zingledrop was plizz instead of not plizz
+X1_wherepartial: are plizz
+X1_wheresentence: those who are plizz
+Xname: plizz
+Y0: is not brifft
+Y0_noun: not brifft
+Y0_sentence: a zingledrop is not brifft
+Y0_wherepartial: are not brifft
+Y0_wheresentence: those who are not brifft
+Y1: is brifft
+Y1_noun: brifft
+Y1_sentence: a zingledrop is brifft
+Y1_wherepartial: are brifft
+Y1_wheresentence: those who are brifft
+Yname: brifft
+Z0: is not flurnt
+Z0_noun: not flurnt
+Z0_sentence: a zingledrop is not flurnt
+Z0_wherepartial: are not flurnt
+Z0_wheresentence: those who are not flurnt
+Z1: is flurnt
+Z1_noun: flurnt
+Z1_sentence: a zingledrop is flurnt
+Z1_wherepartial: are flurnt
+Z1_wheresentence: those who are flurnt
+Zname: flurnt
+

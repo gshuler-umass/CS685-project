@@ -1,0 +1,59 @@
+# snorkelsnoot, blorp, nowpl, mlefuy, plurch
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not blorp
+W0_noun: not blorp
+W0_sentence: a snorkelsnoot is not blorp
+W0_wherepartial: are not blorp
+W0_wheresentence: those who are not blorp
+W1: is blorp
+W1_noun: blorp
+W1_sentence: a snorkelsnoot is blorp
+W1_wherepartial: are blorp
+W1_wheresentence: those who are blorp
+Wname: blorp
+X0: is not nowpl
+X0_noun: not nowpl
+X0_sentence: a snorkelsnoot is not nowpl
+X0_sentence_condition: if the snorkelsnoot was not nowpl instead of nowpl
+X0_wherepartial: are not nowpl
+X0_wheresentence: those who are not nowpl
+X1: is nowpl
+X1_noun: nowpl
+X1_sentence: a snorkelsnoot is nowpl
+X1_sentence_condition: if the snorkelsnoot was nowpl instead of not nowpl
+X1_wherepartial: are nowpl
+X1_wheresentence: those who are nowpl
+Xname: nowpl
+Y0: is not mlefuy
+Y0_noun: not mlefuy
+Y0_sentence: a snorkelsnoot is not mlefuy
+Y0_wherepartial: are not mlefuy
+Y0_wheresentence: those who are not mlefuy
+Y1: is mlefuy
+Y1_noun: mlefuy
+Y1_sentence: a snorkelsnoot is mlefuy
+Y1_wherepartial: are mlefuy
+Y1_wheresentence: those who are mlefuy
+Yname: mlefuy
+Z0: is not plurch
+Z0_noun: not plurch
+Z0_sentence: a snorkelsnoot is not plurch
+Z0_wherepartial: are not plurch
+Z0_wheresentence: those who are not plurch
+Z1: is plurch
+Z1_noun: plurch
+Z1_sentence: a snorkelsnoot is plurch
+Z1_wherepartial: are plurch
+Z1_wheresentence: those who are plurch
+Zname: plurch
+

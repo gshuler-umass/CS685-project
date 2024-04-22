@@ -1,5 +1,5 @@
-# choty, phuffy, tidder, jida
-Source: gpt4
+# blibble choty, phuffy, tidder, jida
+Source: cladder template
 
 phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
 meta:
@@ -12,47 +12,47 @@ variable_correspondence: ''
 
 W0: is not choty
 W0_noun: not choty
-W0_sentence: an individual is not choty
+W0_sentence: a blibble is not choty
 W0_wherepartial: are not choty
 W0_wheresentence: those who are not choty
 W1: is choty
 W1_noun: choty
-W1_sentence: an individual is choty
+W1_sentence: a blibble is choty
 W1_wherepartial: are choty
 W1_wheresentence: those who are choty
 Wname: choty
 X0: is not phuffy
 X0_noun: not phuffy
-X0_sentence: an individual is not phuffy
-X0_sentence_condition: if the individual was not phuffy instead of phuffy
+X0_sentence: a blibble is not phuffy
+X0_sentence_condition: if the blibble was not phuffy instead of phuffy
 X0_wherepartial: are not phuffy
 X0_wheresentence: those who are not phuffy
 X1: is phuffy
 X1_noun: phuffy
-X1_sentence: an individual is phuffy
-X1_sentence_condition: if the individual was phuffy instead of not phuffy
+X1_sentence: a blibble is phuffy
+X1_sentence_condition: if the blibble was phuffy instead of not phuffy
 X1_wherepartial: are phuffy
 X1_wheresentence: those who are phuffy
 Xname: phuffy
 Y0: is not tidder
 Y0_noun: not tidder
-Y0_sentence: an individual is not tidder
+Y0_sentence: a blibble is not tidder
 Y0_wherepartial: are not tidder
 Y0_wheresentence: those who are not tidder
 Y1: is tidder
 Y1_noun: tidder
-Y1_sentence: an individual is tidder
+Y1_sentence: a blibble is tidder
 Y1_wherepartial: are tidder
 Y1_wheresentence: those who are tidder
 Yname: tidder
 Z0: is not jida
 Z0_noun: not jida
-Z0_sentence: an individual is not jida
+Z0_sentence: a blibble is not jida
 Z0_wherepartial: are not jida
 Z0_wheresentence: those who are not jida
 Z1: is jida
 Z1_noun: jida
-Z1_sentence: an individual is jida
+Z1_sentence: a blibble is jida
 Z1_wherepartial: are jida
 Z1_wheresentence: those who are jida
 Zname: jida
