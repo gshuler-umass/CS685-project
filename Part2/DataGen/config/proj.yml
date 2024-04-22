@@ -1,15 +1,15 @@
-_base: [queries/reg, stories/proj]
+_base: [queries/proj_queries, stories/proj]
 
 builder:
   _type: random
-path: data/proj.json
+path: data/proj10.json
 
 seed: 69
 
 name: Project685
 
 
-spec-limit: 10 # how many specs use per story (selected randomly)
+spec-limit: 1 # how many specs use per story (selected randomly)
 #difficulty: easy
 
 
