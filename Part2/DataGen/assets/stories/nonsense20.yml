@@ -1,0 +1,60 @@
+# flibbertywobble, snorble, zowpxi, fluxy, brippo
+
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not snorble
+W0_noun: not snorble
+W0_sentence: a flibbertywobble is not snorble
+W0_wherepartial: are not snorble
+W0_wheresentence: those who are not snorble
+W1: is snorble
+W1_noun: snorble
+W1_sentence: a flibbertywobble is snorble
+W1_wherepartial: are snorble
+W1_wheresentence: those who are snorble
+Wname: snorble
+X0: is not zowpxi
+X0_noun: not zowpxi
+X0_sentence: a flibbertywobble is not zowpxi
+X0_sentence_condition: if the flibbertywobble was not zowpxi instead of zowpxi
+X0_wherepartial: are not zowpxi
+X0_wheresentence: those who are not zowpxi
+X1: is zowpxi
+X1_noun: zowpxi
+X1_sentence: a flibbertywobble is zowpxi
+X1_sentence_condition: if the flibbertywobble was zowpxi instead of not zowpxi
+X1_wherepartial: are zowpxi
+X1_wheresentence: those who are zowpxi
+Xname: zowpxi
+Y0: is not fluxy
+Y0_noun: not fluxy
+Y0_sentence: a flibbertywobble is not fluxy
+Y0_wherepartial: are not fluxy
+Y0_wheresentence: those who are not fluxy
+Y1: is fluxy
+Y1_noun: fluxy
+Y1_sentence: a flibbertywobble is fluxy
+Y1_wherepartial: are fluxy
+Y1_wheresentence: those who are fluxy
+Yname: fluxy
+Z0: is not brippo
+Z0_noun: not brippo
+Z0_sentence: a flibbertywobble is not brippo
+Z0_wherepartial: are not brippo
+Z0_wheresentence: those who are not brippo
+Z1: is brippo
+Z1_noun: brippo
+Z1_sentence: a flibbertywobble is brippo
+Z1_wherepartial: are brippo
+Z1_wheresentence: those who are brippo
+Zname: brippo
+

@@ -1,0 +1,59 @@
+# quizzlefart, plizz, grunp, snorx, flurp
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not plizz
+W0_noun: not plizz
+W0_sentence: a quizzlefart is not plizz
+W0_wherepartial: are not plizz
+W0_wheresentence: those who are not plizz
+W1: is plizz
+W1_noun: plizz
+W1_sentence: a quizzlefart is plizz
+W1_wherepartial: are plizz
+W1_wheresentence: those who are plizz
+Wname: plizz
+X0: is not grunp
+X0_noun: not grunp
+X0_sentence: a quizzlefart is not grunp
+X0_sentence_condition: if the quizzlefart was not grunp instead of grunp
+X0_wherepartial: are not grunp
+X0_wheresentence: those who are not grunp
+X1: is grunp
+X1_noun: grunp
+X1_sentence: a quizzlefart is grunp
+X1_sentence_condition: if the quizzlefart was grunp instead of not grunp
+X1_wherepartial: are grunp
+X1_wheresentence: those who are grunp
+Xname: grunp
+Y0: is not snorx
+Y0_noun: not snorx
+Y0_sentence: a quizzlefart is not snorx
+Y0_wherepartial: are not snorx
+Y0_wheresentence: those who are not snorx
+Y1: is snorx
+Y1_noun: snorx
+Y1_sentence: a quizzlefart is snorx
+Y1_wherepartial: are snorx
+Y1_wheresentence: those who are snorx
+Yname: snorx
+Z0: is not flurp
+Z0_noun: not flurp
+Z0_sentence: a quizzlefart is not flurp
+Z0_wherepartial: are not flurp
+Z0_wheresentence: those who are not flurp
+Z1: is flurp
+Z1_noun: flurp
+Z1_sentence: a quizzlefart is flurp
+Z1_wherepartial: are flurp
+Z1_wheresentence: those who are flurp
+Zname: flurp
+

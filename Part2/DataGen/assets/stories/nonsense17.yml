@@ -1,0 +1,59 @@
+# snarflepop, quop, bleen, zibby, flarn
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not quop
+W0_noun: not quop
+W0_sentence: a snarflepop is not quop
+W0_wherepartial: are not quop
+W0_wheresentence: those who are not quop
+W1: is quop
+W1_noun: quop
+W1_sentence: a snarflepop is quop
+W1_wherepartial: are quop
+W1_wheresentence: those who are quop
+Wname: quop
+X0: is not bleen
+X0_noun: not bleen
+X0_sentence: a snarflepop is not bleen
+X0_sentence_condition: if the snarflepop was not bleen instead of bleen
+X0_wherepartial: are not bleen
+X0_wheresentence: those who are not bleen
+X1: is bleen
+X1_noun: bleen
+X1_sentence: a snarflepop is bleen
+X1_sentence_condition: if the snarflepop was bleen instead of not bleen
+X1_wherepartial: are bleen
+X1_wheresentence: those who are bleen
+Xname: bleen
+Y0: is not zibby
+Y0_noun: not zibby
+Y0_sentence: a snarflepop is not zibby
+Y0_wherepartial: are not zibby
+Y0_wheresentence: those who are not zibby
+Y1: is zibby
+Y1_noun: zibby
+Y1_sentence: a snarflepop is zibby
+Y1_wherepartial: are zibby
+Y1_wheresentence: those who are zibby
+Yname: zibby
+Z0: is not flarn
+Z0_noun: not flarn
+Z0_sentence: a snarflepop is not flarn
+Z0_wherepartial: are not flarn
+Z0_wheresentence: those who are not flarn
+Z1: is flarn
+Z1_noun: flarn
+Z1_sentence: a snarflepop is flarn
+Z1_wherepartial: are flarn
+Z1_wheresentence: those who are flarn
+Zname: flarn
+

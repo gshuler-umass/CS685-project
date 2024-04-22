@@ -1,0 +1,60 @@
+# zinglebingle, ploxmo, snorbl, flurch, briffy
+
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not ploxmo
+W0_noun: not ploxmo
+W0_sentence: a zinglebingle is not ploxmo
+W0_wherepartial: are not ploxmo
+W0_wheresentence: those who are not ploxmo
+W1: is ploxmo
+W1_noun: ploxmo
+W1_sentence: a zinglebingle is ploxmo
+W1_wherepartial: are ploxmo
+W1_wheresentence: those who are ploxmo
+Wname: ploxmo
+X0: is not snorbl
+X0_noun: not snorbl
+X0_sentence: a zinglebingle is not snorbl
+X0_sentence_condition: if the zinglebingle was not snorbl instead of snorbl
+X0_wherepartial: are not snorbl
+X0_wheresentence: those who are not snorbl
+X1: is snorbl
+X1_noun: snorbl
+X1_sentence: a zinglebingle is snorbl
+X1_sentence_condition: if the zinglebingle was snorbl instead of not snorbl
+X1_wherepartial: are snorbl
+X1_wheresentence: those who are snorbl
+Xname: snorbl
+Y0: is not flurch
+Y0_noun: not flurch
+Y0_sentence: a zinglebingle is not flurch
+Y0_wherepartial: are not flurch
+Y0_wheresentence: those who are not flurch
+Y1: is flurch
+Y1_noun: flurch
+Y1_sentence: a zinglebingle is flurch
+Y1_wherepartial: are flurch
+Y1_wheresentence: those who are flurch
+Yname: flurch
+Z0: is not briffy
+Z0_noun: not briffy
+Z0_sentence: a zinglebingle is not briffy
+Z0_wherepartial: are not briffy
+Z0_wheresentence: those who are not briffy
+Z1: is briffy
+Z1_noun: briffy
+Z1_sentence: a zinglebingle is briffy
+Z1_wherepartial: are briffy
+Z1_wheresentence: those who are briffy
+Zname: briffy
+

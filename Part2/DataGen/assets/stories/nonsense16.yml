@@ -1,0 +1,60 @@
+# flobbertywhiffle, snurpt, gruntz, flurrk, zowpxo
+
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not snurpt
+W0_noun: not snurpt
+W0_sentence: a flobbertywhiffle is not snurpt
+W0_wherepartial: are not snurpt
+W0_wheresentence: those who are not snurpt
+W1: is snurpt
+W1_noun: snurpt
+W1_sentence: a flobbertywhiffle is snurpt
+W1_wherepartial: are snurpt
+W1_wheresentence: those who are snurpt
+Wname: snurpt
+X0: is not gruntz
+X0_noun: not gruntz
+X0_sentence: a flobbertywhiffle is not gruntz
+X0_sentence_condition: if the flobbertywhiffle was not gruntz instead of gruntz
+X0_wherepartial: are not gruntz
+X0_wheresentence: those who are not gruntz
+X1: is gruntz
+X1_noun: gruntz
+X1_sentence: a flobbertywhiffle is gruntz
+X1_sentence_condition: if the flobbertywhiffle was gruntz instead of not gruntz
+X1_wherepartial: are gruntz
+X1_wheresentence: those who are gruntz
+Xname: gruntz
+Y0: is not flurrk
+Y0_noun: not flurrk
+Y0_sentence: a flobbertywhiffle is not flurrk
+Y0_wherepartial: are not flurrk
+Y0_wheresentence: those who are not flurrk
+Y1: is flurrk
+Y1_noun: flurrk
+Y1_sentence: a flobbertywhiffle is flurrk
+Y1_wherepartial: are flurrk
+Y1_wheresentence: those who are flurrk
+Yname: flurrk
+Z0: is not zowpxo
+Z0_noun: not zowpxo
+Z0_sentence: a flobbertywhiffle is not zowpxo
+Z0_wherepartial: are not zowpxo
+Z0_wheresentence: those who are not zowpxo
+Z1: is zowpxo
+Z1_noun: zowpxo
+Z1_sentence: a flobbertywhiffle is zowpxo
+Z1_wherepartial: are zowpxo
+Z1_wheresentence: those who are zowpxo
+Zname: zowpxo
+
