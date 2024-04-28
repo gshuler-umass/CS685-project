@@ -1,0 +1,15 @@
+<Begin Reasoning Modules>
+4 How can I simplify the problem so that it is easier to solve?
+5 What are the key assumptions underlying this problem?
+9 How can I break down this problem into smaller, more manageable parts?
+10 Critical Thinking: This style involves analyzing the problem from different perspectives, questioning assumptions, and evaluating
+the evidence or information available. It focuses on logical reasoning, evidence-based decision-making, and identifying
+potential biases or flaws in thinking.
+13 Use systems thinking: Consider the problem as part of a larger system and understanding the interconnectedness of various elements.
+Focuses on identifying the underlying causes, feedback loops, and interdependencies that influence the problem, and developing holistic
+solutions that address the system as a whole.
+20 Are there any relevant data or information that can provide insights into the problem? If yes, what data sources are available,
+and how can they be analyzed?
+29 Is the problem an analytical one that requires data analysis, modeling, or optimization techniques?
+38 Let’s think step by step.
+</End Reasoning Modules>
