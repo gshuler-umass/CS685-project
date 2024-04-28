@@ -1,0 +1,871 @@
+ids,desc_id,original_question_id,given_info,reasoning,question,selections,ground truth,adaptations,reasoning structure:,answer,final_answer,match
+46,firing_squad-diamond-det-counterfactual-model155-spec1-q2,47,We know that the captain's order to execute the prisoner causes the corporal shooting and the private shooting. the corporal shooting and the private shooting causes the prisoner's death.,"{'step0': 'Let X = the captain; V3 = the private; V2 = the corporal; Y = prisoner.', 'step1': 'X->V3,X->V2,V2->Y,V3->Y', 'step2': 'Y_{X=1} = 1 | ', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = X\nV3 = V2\nY = V2 and V3', 'step5': 'Y = [1] = 1 and 1', 'end': '1'}",Would the prisoner is dead if the captain's order to execute the prisoner instead of the captain's order to release the prisoner?,"10, 13, 38",yes,"<ADAPTED MODULES:> <Begin Adapted Modules>
+10 Critical Examination: This involves examining the causal chain created by the captain's order, corporal shooting and private shooting, challenging any unwarranted assumptions, and evaluating any potential biases in the presented sequence of logic. Focuses on logical reasoning and evidence-based understanding. 
+
+13 Use causal systems thinking: Analyze the problem as a part of a larger causality system, identifying the interconnectedness between the captain's order, the acts of the corporal and private, and the prisoner's fate. Involves understanding the cause-consequence mechanism and finding holistic insights about the entire system.
+
+38 Sequential Causal Analysis: Consider the causality in an ordered manner, starting from the captain's order, through the corporal and private's act, and finally to the resultant fate of the prisoner.
+</End Adapted Modules>","{
+ ""Examine the problem sequence"": ""The captain's order -> Corporal and private shooting -> Prisoner's death"",
+ ""Unwarranted assumptions and potential biases"": ""Assuming the corporal and private will follow any order the captain gives, and assuming the shooting by the corporal and private will always result in the prisoner's death"",
+ ""Interconnectedness in the causality system"": ""The captain's order directly causes the actions of the corporal and private, and the actions of the corporal and private cause the prisoner's death"",
+ ""Sequential Causal Analysis"": ""If the captain's order changes, then the actions of the corporal and private are likely to change. If the actions of the corporal and private change, the fate of the prisoner is also likely to change""
+}","{
+ ""Examine the problem sequence"": ""The captain's order -> Corporal and private shooting -> Prisoner's death"",
+ ""Unwarranted assumptions and potential biases"": ""Assuming the corporal and private will follow any order the captain gives, and assuming the shooting by the corporal and private will always result in the prisoner's death"",
+ ""Interconnectedness in the causality system"": ""The captain's order directly causes the actions of the corporal and private, and the actions of the corporal and private cause the prisoner's death"",
+ ""Sequential Causal Analysis"": ""If the captain's order changes, then the actions of the corporal and private are likely to change. If the actions of the corporal and private change, the fate of the prisoner is also likely to change"",
+ ""Conclusion"": ""If the captain orders to release the prisoner instead of executing, the corporal and private will not shoot, resulting in the prisoner not dying"",
+ ""Brief_final_answer"": ""No""
+}",no,FALSE
+188,college_wage-IV-det-counterfactual-model177-spec1-q4,189,We know that confounder active and close to a college causes college degree or higher. confounder active and college degree or higher causes high salary. We observed the person lives far from a college and confounder active.,"{'step0': 'Let V2 = proximity to a college; V1 = unobserved confounders; X = education level; Y = salary.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 1 | V2=0, V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nV1 = 1\nX = V1 and V2\nY = V1 and X', 'step5': 'Y = 0 = 1 and 0', 'end': '0'}",Would the employee has a high salary if high school degree or lower instead of college degree or higher?,"10, 13, 38",no,"10: Examine the problem from varying viewpoints, interrogating premises, and appraising the legitimacy or data attached. Concentrate on rational reasoning, decisions based on facts, and recognizing potential preconceptions or flaws in reasoning within the framework of this particular causal reasoning problem.
+
+13: View this as a situation inside a broader system and understand how different parts are interlinked. Emphasize determining the fundamental causes, feedback loops, and dependencies influencing the problem, and design inclusive solutions that address the entire system of confounder, proximity to college, level of education, and salary.
+
+38: Analyze the logical relationships among a person's proximity to a college; the activity of the confounder; the person's level of education, such as high school degree, college degree or higher; and their potential to earn a high salary, step by step.","{
+ ""Understanding the problem"": ""Recognize the causal relationship among confounder activity, proximity to college, education level, and high salary"",
+ ""Key assumptions"": ""Identify that proximity to a college, confounder activity, and education level causally affect the likelihood of earning a high salary"",
+ ""Problem Simplification"": ""By assuming that other factors, such as years of experience, industry, etc., are constant among individual, simplify the problem to the effect of the confounder activity, college proximity, and education level on high salary"",
+ ""Information sources"": ""We have the data on the individual's proximity to a college, the active status of the confounder, and their level of education"",
+ ""System Analysis"": ""Analyze the interdependencies among these variables and how changing one could potentially affect the others"",
+ ""Breaking problem into smaller parts"": ""Decompose the problem to first understand the impact of the confounder and proximity to college on acquiring a college degree or higher. Then, examine how the confounder active and having a college degree (or not) affects salary"",
+ ""Analytical techniques"": ""Usage of causal reasoning frameworks to understand the dynamics among these variables"",
+ ""Step by Step Reasoning"": ""Isolate each factor and understand how changing it could potentially alter the output of the scenario""
+}","{
+ ""Understanding the problem"": ""We have a causal chain: confounder active and close to a college -> college degree or higher -> high salary. In the given scenario, we know that the confounder is active, but the person lives far from a college."",
+ ""Key assumptions"": ""First, we assume that living far from a college will result in the person not attaining a college or higher degree. Second, we assume that without a college degree or higher, it is less likely for this person to have a high salary."",
+ ""Problem Simplification"": ""We can disregard other potential factors that may influence a person's income, focusing on distance to college, confounder activity, and educational attainment."",
+ ""Information sources"": ""We already know that: 1) the person lives far from a college, and 2) the confounder is active."",
+ ""System Analysis"": ""From the given information, we can infer the two probable outcomes: 1) the person may not have a college degree or higher due to their distance from the college, and therefore, 2) the person may not have a high salary."",
+ ""Breaking problem into smaller parts"": ""First, we infer that the person's location may prevent them from attaining a college degree or higher. Second, their lack of this level of education, even with an active confounder, may reduce the chance of them having a high salary."",
+ ""Analytical techniques"": ""We use inference based on the causal chain: confounder active and close to a college -> college degree or higher -> high salary."",
+ ""Step by Step Reasoning"": ""In the given scenario: 1) the person lives far from a college, 2) thus, it's unlikely for them to have a college degree or higher, 3) without a college degree or higher, they are unlikely to have a high salary, even though the confounder is active."",
+ ""Final Answer"" : ""No, the employee would not have a high salary if they have a high school degree or lower instead of a college degree or higher."",
+""brief_final_answer"": ""No""
+}",no,TRUE
+386,simpson_vaccine-confounding-det-counterfactual-model209-spec1-q2,387,We know that pre-conditions causes getting the vaccine. pre-conditions or getting the vaccine causes recovering from the disease. We observed the person has no pre-conditions.,"{'step0': 'Let V1 = pre-conditions; X = vaccination; Y = disease.', 'step1': 'V1->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 1 | V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V1 = 0\nX = V1\nY = V1 or X', 'step5': 'Y = 1 = 0 or 1', 'end': '1'}",Would the person recovers from the disease if getting the vaccine instead of vaccine refusal?,"10, 38",yes,"10 Critical Thinking: Analyze the causal relations between pre-conditions, getting the vaccine, and recovery from the disease. Question assumptions, assess evidence or lack thereof, and identify potential logical fallacies or oversights. Focus on evidence-based decision-making and logical deductions based on the pre-conditions and recovery outcomes.
+
+38 Step by Step Analysis: Evaluate the components in the problem statement. Determine the presence or absence of pre-conditions, the effect of getting the vaccine, and the probable outcome i.e., recovery from the disease. Conduct a systematic analysis taking into considerations the conditions provided.","{
+ ""Analyze pre-conditions for vaccine"": ""Person has no pre-conditions"",
+ ""Evaluate vaccine necessity"": ""Vaccine causes recovery from disease"",
+ ""Assess individual scenario"": ""Person gets vaccine despite absence of preconditions"",
+ ""Possible outcome"": ""Recovery from disease after getting vaccine"",
+ ""Analyze alternate scenario"": ""Vaccine refusal"",
+ ""Possible outcome of refusal"": ""No recovery due to refusal""
+}","{
+ ""Analyze pre-conditions for vaccine"": ""Person has no pre-conditions"",
+ ""Evaluate vaccine necessity"": ""Vaccine causes recovery from disease"",
+ ""Assess individual scenario"": ""Person gets vaccine despite absence of preconditions"",
+ ""Possible outcome"": ""Recovery from disease possible after getting vaccine"", 
+ ""Analyze alternate scenario"": ""Vaccine refusal"",
+ ""Possible outcome of refusal"": ""Recovery less likely due to refusal"", 
+ ""Final Answer"": ""The person is more likely to recover from the disease after getting the vaccine, despite having no preconditions"", 
+ ""brief_final_answer"": ""Yes""
+}",yes,TRUE
+146,cholesterol-IV-det-counterfactual-model173-spec1-q2,147,We know that confounder active or assignment of drug treatment causes taking of all assigned drugs. confounder active or taking of all assigned drugs causes low cholesterol. We observed the patient is not assigned the drug treatment and confounder inactive.,"{'step0': 'Let V2 = treatment assignment; V1 = unobserved confounders; X = drug taken; Y = cholesterol level.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 1 | V2=0, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nV1 = 0\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 1 = 0 or 1', 'end': '1'}",Would the patient has low cholesterol if taking of all assigned drugs instead of not taking of any assigned drugs?,"10, 13, 38",yes,"<Begin Adapted Reasoning Modules>
+10 Inference Making: Evaluate the scenario by considering the causality, identifying assumptions and evaluating the conditions presented. The focus is on logical inference, ensuring the conclusion aligns with the cause-and-effect relationship, and identifying potential biases or flaws in an argument's logic. 
+
+13 Use causal reasoning: Analyze the problem as part of the broader scenario understanding the connectedness of various elements. This focus is on identifying the direct causes, subsequent reactions, and dependencies that affect the conclusion. Approach the solution by treating every cause and effect as part of a complex system.
+
+38 Logical step-by-step analysis: Analyze the problem systematically in the cause and effect order presented. Take into account each piece of information and its consequences while making deductions.
+<End Adapted Reasoning Modules>","{
+ ""Identify the problem"": ""Would the patient has low cholesterol if taking of all assigned drugs instead of not taking of any assigned drugs?"",
+ ""Evaluate Conditions"": 
+  {
+    ""Observed Conditions"": ""The patient is not assigned the drug treatment and confounder inactive"",
+    ""Potential Change"": ""Patient takes all assigned drugs instead of not taking any drugs""
+  },
+ ""Underlying assumptions"": 
+  {
+    ""Assumption 1"": ""Confounder active or assignment of drug treatment causes taking of all assigned drugs"",
+    ""Assumption 2"": ""Confounder active or taking of all assigned drugs causes low cholesterol""
+  },
+ ""Inference from conditions and assumptions"": 
+  {
+    ""Inference 1"": ""From the observed conditions and Assumption 1 we know the patient would not be taking any assigned drugs"",
+    ""Inference 2"": ""Knowing the consequent change and Assumption 2, if the patient takes all assigned drugs, he could have low cholesterol, even though he is not assigned the drug treatment and confounder inactive""
+  },
+ ""Causal Reasoning"": 
+  {
+    ""Causal Statement 1"": ""Assignment of drug treatment and confounder active lead to taking of all assigned drugs"",
+    ""Causal Statement 2"": ""Taking all assigned drugs and confounder active lead to low cholesterol"",
+    ""Causal Conclusion"": ""Patient would likely exhibit lower cholesterol if he/she takes assigned drugs""
+  },
+ ""Final Step"": ""Compare the initial state of the patient with the consequent change in behavior (taking of drugs) and evaluate the possible outcome""
+}","{
+ ""Identify the problem"": ""Would the patient has low cholesterol if taking of all assigned drugs instead of not taking of any assigned drugs?"",
+ ""Evaluate Conditions"": 
+  {
+    ""Observed Conditions"": ""The patient is not assigned the drug treatment and confounder inactive"",
+    ""Potential Change"": ""Patient takes all assigned drugs instead of not taking any drugs""
+  },
+ ""Underlying assumptions"": 
+  {
+    ""Assumption 1"": ""Confounder active or assignment of drug treatment causes taking of all assigned drugs"",
+    ""Assumption 2"": ""Confounder active or taking of all assigned drugs causes low cholesterol""
+  },
+ ""Inference from conditions and assumptions"": 
+  {
+    ""Inference 1"": ""From the observed conditions and Assumption 1, we know the patient would not be taking any assigned drugs initially"",
+    ""Inference 2"": ""Knowing the potential change and Assumption 2, if the patient takes all assigned drugs, he could potentially have low cholesterol, despite the initial condition of not being assigned the drug treatment or having active confounder""
+  },
+ ""Causal Reasoning"": 
+  {
+    ""Causal Statement 1"": ""Assignment of drug treatment and confounder active could potentially lead to the patient taking all assigned drugs"",
+    ""Causal Statement 2"": ""Taking all assigned drugs and confounder active could potentially lead to low cholesterol"",
+    ""Causal Conclusion"": ""Despite not being assigned the drug treatment or having confounder active, the patient could potentially exhibit lower cholesterol levels if he/she decides to take all assigned drugs""
+  },
+ ""Final Step"": ""Compare the initial state of the patient with the potential change in behavior (taking of all assigned drugs) and evaluate the possible outcome based on the assumptions and inferences made"",
+ ""Final Answer"": ""Yes, the patient could potentially exhibit lower cholesterol if he/she decides to take all assigned drugs, despite the initial condition"",
+ ""Brief Final Answer"": ""Yes""
+}",yes,TRUE
+67,forest_fire-fork-det-counterfactual-model159-spec1-q3,68,We know that the camper lighting a match or the chain-smoker lighting a match causes the forest on fire. We observed the chain-smoker doesn't light a match.,"{'step0': 'Let V2 = the smoker; X = the camper; Y = the forest.', 'step1': 'X->Y,V2->Y', 'step2': 'Y_{X=1} = 0 | V2=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nY = X or V2', 'step5': 'Y = 1 = 1 or 0', 'end': '0'}",Would the forest doesn't burn down if the camper lighting a match instead of the camper not lighting a match?,"10, 38",no,"<ADAPTED MODULES:>
+
+10. Evaluate the situation by considering different outcomes of the camper or the chain smoker lighting the match, question the assumptions made in the problem, and logically analyze if the forest will burn down without the chain smoker's action.
+
+38. Think through the step-by-step actions of the camper lighting a match and analyze its potential to cause a forest fire without the chain-smoker's involvement.","{
+ ""Problem Definition"": ""We know that the camper lighting a match or the chain-smoker lighting a match causes the forest on fire. We observed the chain-smoker doesn't light a match. Would the forest doesn't burn down if the camper lighting a match instead of the camper not lighting a match?"",
+ ""Key Assumptions"": ""The forest catches fire if a match is lit by either the camper or the chain-smoker. The chain-smoker did not light a match."",
+ ""Simplified Problem"": ""Would the forest burn down if the camper lit a match?"",
+ ""Individual Actions and Consequences"": 
+   {
+     ""Camper lights a match"": ""Potential for the forest to catch fire"",
+     ""Chain smoker lights a match"": ""Chain smoker did not light a match, so no fire caused by chain-smoker""
+   },
+ ""Potential Scenarios"": 
+   {
+     ""Scenario 1"": ""The camper lights a match, and this action leads to a forest fire."",
+     ""Scenario 2"": ""The camper lights a match, but this does not trigger a forest fire.""
+   },
+ ""Concluding Questions"": ""What are the conditions under which the camper lighting a match leads to a forest fire? Are those conditions met in the current situation?""
+}","{
+ ""Problem Definition"": ""We know that the camper lighting a match or the chain-smoker lighting a match causes the forest on fire. We observed the chain-smoker doesn't light a match. Would the forest doesn't burn down if the camper lighting a match instead of the camper not lighting a match?"",
+ ""Key Assumptions"": ""The forest catches fire if a match is lit by either the camper or the chain-smoker. The chain-smoker did not light a match."",
+ ""Simplified Problem"": ""Does the forest catch fire if the camper lights a match?"",
+ ""Individual Actions and Consequences"": 
+   {
+     ""Camper lights a match"": ""The forest potentially catches fire"",
+     ""Chain smoker lights a match"": ""Chain smoker did not light a match, so no fire caused by the chain-smoker""
+   },
+ ""Potential Scenarios"": 
+   {
+     ""Scenario 1"": ""The camper lights a match and the forest catches fire"",
+     ""Scenario 2"": ""The camper lights a match but the forest does not catch fire""
+   },
+ ""Concluding Questions"": ""Does lighting a match by the camper cause a forest fire?"",
+ ""Final Answer"": ""Yes, if the camper lights a match, there is a possibility that the forest will catch fire. However, it is not guaranteed, as other conditions may be present that would prevent a fire, such as a lack of fuel or damp conditions."", 
+ ""Brief_Final_Answer"": ""Yes""
+}",yes,FALSE
+11,candle-fork-det-counterfactual-model150-spec0-q3,12,We know that blowing out the candle or candle with wax causes dark room. We observed the candle is out of wax.,"{'step0': 'Let V2 = the candle; X = the man in the room; Y = room.', 'step1': 'X->Y,V2->Y', 'step2': 'Y_{X=1} = 0 | V2=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nY = X or V2', 'step5': 'Y = 1 = 1 or 0', 'end': '0'}",Would the room is bright if blowing out the candle instead of not blowing out the candle?,"5, 10, 38",no,"<Adapted Modules>
+
+5: What are the key assumptions in this logic problem specifically related to the effects of blowing out the candle or it running out of wax on the room's brightness?
+
+10: Analyzing the logic problem from different perspectives, questioning implications of blowing out the candle instead of letting it run out of wax. Evaluating the logical sequence and the causality chain: does the candle being out, in any case, leads to a dark room? Are there any potential biases or flaws in this thought process?
+
+38: Let's consider the problem in a step by step manner, linking the effect of each cause (blowing out the candle, the candle running out of wax) to the resulting state of the room's brightness.","{
+ ""Key Assumptions"": ""Effects of blowing out the candle or running out of wax on room's brightness"", 
+ ""Different Perspectives"": ""Implications of blowing out the candle instead of letting it run out of wax"",
+ ""Evaluating Logical Sequence"": ""Does the candle being out, in any case, leads to a dark room?"",
+ ""Identifying Potential Flaws"": ""Seeking biases or flaws in thought process"",
+ ""Step by Step Reasoning"": ""Effects of each cause (blowing out candle, candle running out of wax) on the state of room's brightness""
+}","{
+ ""Key Assumptions"": ""Blowing out the candle or running out of wax causes the room to be dark"", 
+ ""Different Perspectives"": ""Regardless of the method (blowing out the candle vs running out of wax), the candle is out and this leads to a dark room"",
+ ""Evaluating Logical Sequence"": ""Yes, regardless of whether the candle is blown out or runs out of wax, the room is dark because in both scenarios, the candle is not lit"",
+ ""Identifying Potential Flaws"": ""There could be other sources of light in the room that are independent of the candle. Therefore, the room may not necessarily be dark when the candle is out"",
+ ""Step by Step Reasoning"": ""1. Candle out due to being blown out: Room becomes dark. 2. Candle out due to running out of wax: Room becomes dark."",
+ ""Final Answer"": ""No, the room will not be bright if the candle is blown out instead of not blowing out the candle as in both cases, the candle is not lit"",
+ ""Brief_Final_Answer"": ""No""
+}",no,TRUE
+489,water_cholera-IV-det-counterfactual-model220-spec0-q9,490,We know that high poverty or global water company causes clean water. high poverty or clean water causes cholera contraction. We observed the person is served by a global water company and the region has low poverty.,"{'step0': 'Let V2 = water company; V1 = poverty; X = water quality; Y = cholera.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 0 | V2=1, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 0\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 0 = 0 or 0', 'end': '1'}",Would the person avoids cholera if polluted water instead of clean water?,"10, 13, 38",yes,"10. Analyze the problem from the perspective of causal relations, question the link between poverty, water company service, clean water, and cholera contraction. Evaluate the effects of changing one condition in the causal chain and envisage potential biases or flaws in thinking.
+  
+13. View the problem as part of a larger causal system, understanding the interconnectedness of variables such as poverty, cleanliness of water, and cholera contraction. Focus on identifying the underlying causes, consequences of changing one variable, and interdependencies that influence the condition.
+
+38. Think through the causal chain step by step, consider what happens if one link (cleanliness of water) is changed or removed.","{
+ ""Identify underlying causal chains"": ""High poverty or global water company causes clean water. High poverty or clean water causes cholera contraction"",
+ ""Given conditions"": ""Person is served by a global water company and the region has low poverty"",
+ ""Evaluate the effect of changing condition"": ""Assess the impact of water pollution instead of clean water"",
+ ""Question Assumptions"": ""Is clean water the only factor influencing cholera contraction?"",
+ ""Break down problem"": ""Focus specifically on the link between cleanliness of water and cholera"",
+ ""Systems perspective"": ""Understand the interconnectedness of clean water, service by a global water company, poverty, and cholera contraction"",
+ ""Step-by-step analysis"": ""Follow the causal chain while changing one variable (clean water to polluted water)""
+ }","{
+ ""Identify underlying causal chains"": ""1) Global water company -> clean water -> cholera contraction. 2) High poverty -> clean water -> cholera contraction"",
+ 
+ ""Given conditions"": ""The person is served by a global water company (therefore has clean water) and lives in a region with low poverty"",
+ 
+ ""Evaluate the effect of changing condition"": ""Clean water (provided by the global water company) is changed to polluted water"",
+ 
+ ""Question Assumptions"": ""Yes, in this causal chain, clean water is the only factor influencing cholera contraction"",
+ 
+ ""Break down problem"": ""We need to understand if polluted water, provided by the global water company, would prevent cholera contraction"",
+ 
+ ""Systems perspective"": ""The person is affected by three interconnected factors: proximity to the global water company, the quality of water, and cholera contraction risk"",
+ 
+ ""Step-by-step analysis"": ""1) Global water company -> polluted water; would this change lead to -> No cholera contraction?"",
+ 
+ ""Final Answer"": ""If clean water causes cholera contraction, polluted water from the global water company would prevent cholera contraction; hence, the person would avoid cholera if supplied with polluted water instead of clean water"",
+ 
+ ""Brief_final_answer"": ""Yes""
+ }",yes,TRUE
+472,tax_smoke_birthWeight-IV-det-counterfactual-model219-spec1-q8,473,We know that confounder active and high cigarette tax causes smoking mother. confounder active and smoking mother causes normal infant birth weight. We observed the cigarette tax is high and confounder inactive.,"{'step0': ""Let V2 = cigarette tax; V1 = unobserved confounders; X = maternal smoking status; Y = infant's birth weight."", 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 1 | V2=1, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 0\nX = V1 and V2\nY = V1 and X', 'step5': 'Y = 0 = 0 and 0', 'end': '0'}",Would the infant is born with a normal weight if nonsmoking mother instead of smoking mother?,"10, 13, 38",no,"<Adapted Reasoning Modules>
+
+10 Analyze the problem from different perspectives: This technique will involve examining the causal relationships between confounder activity, the level of cigarette tax, a smoking or non-smoking mother, and a normally weighted infant. Question assumptions and evaluate the evidence, focusing on logical reasoning and understanding potential biases or flaws in this chain of cause and effect.
+
+13 Consider the problem as part of a larger causal system: Understand the interconnectedness of confounder activity, high cigarette tax, smoking mother, and normal infant birth weight. Focus on identifying the underlying causes, the chain of cause and effect, and the interdependencies that influence the baby's birth weight, considering the situation where the mother is non-smoking.
+
+38 Think causally, step by step: Review each link in the causal chain separately — from confounder activity and level of cigarette tax to a smoking mother, to the birth weight of the infant. Then consider the impact on normal birth weight if the smoking mother were replaced with a non-smoking mother.","{
+ ""Examine the causal relationships"": ""Evaluate the relations between confounder activity, the level of cigarette tax, smoking mother, and normal infant birth weight. Pay attention to how these factors interplay to determine the infant's birth weight."",
+ ""Understand the larger causal system"": ""Identify interconnections among confounder activity, level of cigarette tax, smoking mother, and normal infant birth weight. Understand how changing one variable (mother's smoking status) could affect the result (infant's birth weight)"",
+ ""Inspect the impact of a non-smoking mother"": ""Consider the scenario with the confounder inactive. What happens if we eliminate the 'smoking mother' effect? How does that disrupt the chain leading to the 'normal infant birth weight'?"",
+ ""Consider individual influences"": ""Break down each element of the causal chain and understand how each of them individually impacts the infant's birth weight. How do high cigarette tax and inactive confounder influence smoking status or birth weight of an infant in the absence of a smoking mother?"",
+ ""Reflect on assumptions and potential biases"": ""Acknowledge any potentials biases or assumption in this causal reasoning chain. How do these assumptions affect the overall reasoning? Identify any weaknesses or potential flaws in thinking.""
+}","{
+ ""Examine the causal relationships"": ""The causal relationships indicate that both 'confounder active' and 'high cigarette tax' together cause 'smoking mother', and 'confounder active' and 'smoking mother' subsequently result in 'normal infant birth weight'. However, in the observed situation, we have 'cigarette tax high' and 'confounder inactive'."",
+ 
+ ""Understand the larger causal system"": ""The larger causal system shows a sequence starting from 'confounder active' and 'high cigarette tax', leading to 'smoking mother', which in turn contributes to 'normal infant birth weight'. If the mother's smoking status changes, it could potentially break this causal chain and influence the birth weight output."",
+ 
+ ""Inspect the impact of a non-smoking mother"": ""Under the scenario with 'confounder inactive', the 'smoking mother' effect would theoretically be eliminated. Without the 'smoking mother', the causal chain is disrupted and no indication is provided for the impact on the infant's birth weight without this factor in play."",
+ 
+ ""Consider individual influences"": ""The 'high cigarette tax' and 'inactive confounder' individually may not be strong direct influences on the infant's birth weight, especially considering the 'smoking mother' has been eliminated from the equation. We currently lack information as to how these factors will affect the infant's birth weight without the mother's smoking status in the picture."",
+
+ ""Reflect on assumptions and potential biases"": ""The assumptions in this causal reasoning chain is that 'high cigarette tax' and 'confounder active' contributes to the mother's smoking status and that the latter further determines the infant's birth weight. However, these relations may be confounded by additional, unconsidered factors. Each causal link depends on the exact effects of the variables involved and may not hold true in all scenarios. Therefore, we can't definitively confirm the infant's birth weight."",
+
+ ""Final Answer"": ""Given that the confounder is inactive and there is a non-smoking mother, there isn't enough evidence based solely on the provided relations to determine the likelihood of a normal infant birth weight. Additional factors or relationships not included in the current system might affect the outcome."",
+
+ ""Brief_Final_Answer"": ""No""
+}",no,TRUE
+368,simpson_kidneystone-confounding-det-counterfactual-model207-spec1-q0,369,We know that large kidney stone causes receives treatment. large kidney stone or receives treatment causes recovery. We observed the patient has a small kidney stone.,"{'step0': 'Let V1 = kidney stone size; X = treatment; Y = recovery.', 'step1': 'V1->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 1 | V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V1 = 0\nX = V1\nY = V1 or X', 'step5': 'Y = 0 = 0 or 0', 'end': '0'}",Would the patient does recover if receives no treatment instead of receives treatment?,"10, 38",no,"10 Critical Kidney Stone Problem Thinking: Focus on analyzing the logic behind kidney stone size to treatment to recovery relation, scrutinize the assumptions such as a small kidney stone not receiving treatment, and evaluate the evidence or information if any. It accentuates on the logical reasoning, fact-based decision-making related to the specific patient case, and identifying potential biases or flaws in thinking with respect to kidney stone cases.
+
+38 Let's consider the Kidney Stone Problem step by step: Contemplate the kidney stone problem in a systematic order, moving from the presence of the stone, its size, the need for treatment, and the effect on the recovery. Visualize this in an orderly manner to track the relationship and causality.","{
+ ""Understanding the problem statement"": ""Identifying the causal relationship between 'kidney stone size', 'treatment' and 'recovery'"",
+ ""Key assumptions of the problem"": ""Large kidney stones require treatment, treatment generally leads to recovery"",
+ ""Patient's specific condition"": ""The patient has a small kidney stone and receives no treatment"",
+ ""Analyzing the effect of no treatment on recovery for small kidney stone"": ""Considering the causal relationship among key elements in context of the data provided in the problem statement"",
+ ""Critical thinking on the effect of treatment over recovery"": ""Analyzing logic behind kidney stone size to treatment to recovery relation"",
+ ""Systems thinking on the interconnectedness"": ""Looking into the problem as a part of a larger system and understanding the interdependencies"",
+ ""Step by step logical analysis"": ""Contemplating the situation systematically starting from the presence of the stone, its size, the treatment or no treatment, then impact on recovery"",
+ ""Consider more data or further information if available"": ""What previous data shows regarding small kidney stones and recovery without treatment""
+}","{
+ ""Understanding the problem statement"": ""The problem statement suggests a causal relationship where having a large kidney stone leads to receiving treatment, and either a large stone or receiving treatment leads to recovery. The task is to analyze if a patient with a small kidney stone would recover if they do not receive treatment."",
+ ""Key assumptions of the problem"": ""The problem assumes that large stones require treatment and that either treatment or having a large stone leads to recovery. It does not state anything about the recovery process for small stones without treatment."",
+ ""Patient's specific condition"": ""The patient has a small kidney stone and does not receive treatment."",
+ ""Analyzing the effect of no treatment on recovery for small kidney stone"": ""Based on the problem statement, there is no causality between the size of the kidney stone and the recovery if no treatment is received. The problem statement also does not provide information about the potential for recovery with small stones without treatment."",
+ ""Critical thinking on the effect of treatment over recovery"": ""The problem suggests that treatment generally leads to recovery regardless of stone size. However this does not give us sufficient information to comment on recovery without treatment for a small stone."",
+ ""Systems thinking on the interconnectedness"": ""There are three factors to consider in this system: kidney stone size, whether treatment is received, and whether the patient recovers. However, no information is provided regarding the connection between small kidney stones, no treatment, and recovery."",
+ ""Step by step logical analysis"": ""Given the patient's condition (small kidney stone, no treatment), and the information provided in the problem statement, it is uncertain whether the patient would recover without treatment. Based on the given causality, treatment generally contributes to recovery, but we cannot infer from this that no treatment necessarily leads to non-recovery, especially for patients with small stones."",
+ ""Consider more data or further information if available"": ""To make an accurate prediction, we would need more data. Particularly, data related to cases of patients with small kidney stones who do not receive treatment would be helpful to determine if recovery is likely."",
+""Final answer"": ""It is uncertain whether a patient with a small kidney stone would recover without treatment, given the information provided in the problem."",
+""Brief_final_answer"": ""No""
+}",no,TRUE
+300,price-IV-det-counterfactual-model200-spec0-q4,301,We know that increased demand or increased yield per acre causes increased supply. increased demand or increased supply causes increased price. We observed the farm has a reduced yield per acre and the demand is high.,"{'step0': 'Let V2 = yield per acre; V1 = demand; X = supply; Y = price.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 1 | V2=0, V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nV1 = 1\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 1 = 1 or 0', 'end': '1'}",Would there is an increased price if reduced supply instead of increased supply?,"10, 13, 38",yes,"10: Engage in detailed scrutiny: Analyze the logical connections between increased demand, yield per acre, supply, and price. Question assumptions about causality between these factors and evaluate the implications of observed changes in yield and demand.
+ 
+13: Apply Agricultural Systems Thinking: Understand this problem as part of the broader agriculture economy, focusing on how demand, yield, supply, and price interact. Identify key factors influencing these aspects and develop holistic solutions that take into account all of these interconnected elements.
+ 
+38: Proceed in a step-by-step manner: First, analyze the effects of decreased yield per acre and high demand on supply. Second, extrapolate on the effects of that supply level on price.","{
+ ""Assumptions underlying this problem"": ""Increased demand or increased yield per acre causes increased supply; increased demand or increased supply causes increased price"",
+ ""Analysis of observed scenario (Decreased yield and high demand)"": ""Assess how decreased yield impacts supply and how high demand also impacts supply"",
+ ""Effects of decreased yield and high demand on supply"": ""Extrapolate whether supply will decrease or increase based on decreased yield and increased demand"",
+ ""Effects of supply level on price"": ""Analyze how the extrapolated level of supply affects price"",
+ ""Possible Price Outcome"": ""Predict the possible price outcome based on the extrapolated supply level"",
+ ""Application of Systems thinking"": ""Identify factors such as the effect of market forces, seasonality, other producers’ reactions that may influence the outcome"",
+ ""Consideration of Additional relevant data"": ""Identify any additional data that may be relevant and helpful in the problem-solving process"",
+ ""Exploration of other analytical techniques"": ""Consider whether any other analytical techniques such as optimization or data analysis could be applied to this problem""
+}","{
+ ""Assumptions underlying this problem"": ""Increased demand or increased yield per acre causes increased supply; increased demand or increased supply causes increased price"",
+ ""Analysis of observed scenario (Decreased yield and high demand)"": ""Decreased yield per acre will decrease supply.  High demand remains the same."",
+ ""Effects of decreased yield and high demand on supply"": ""The supply will likely decrease due to decreased yield despite the high demand"",
+ ""Effects of supply level on price"": ""Decreased supply will not lead to an increase in price due to the assumptions of the problem."",
+ ""Possible Price Outcome"": ""Without an increase in supply, the price will not increase as per the problem's constructs."",
+ ""Application of Systems thinking"": ""Other farmers could possibly increase their yields to meet the high demand which would increase the supply thereby increasing price."",
+ ""Consideration of Additional relevant data"": ""Additional data such as market trends, average yield per acre in similar farms, etc. could be helpful."",
+ ""Exploration of other analytical techniques"": ""An optimization model might help to determine an optimal balance between yield and price. Data analysis could uncover relevant trends."",
+ ""Final_Answer"": ""No, according to the problem's constructs and given the reduced supply, there wouldn’t be an increase in price."",
+ ""Brief_Final_Answer"": ""No""
+}",no,FALSE
+159,cholesterol-IV-det-counterfactual-model173-spec1-q15,160,We know that confounder active or assignment of drug treatment causes taking of all assigned drugs. confounder active or taking of all assigned drugs causes low cholesterol. We observed the patient is assigned the treatment and confounder active.,"{'step0': 'Let V2 = treatment assignment; V1 = unobserved confounders; X = drug taken; Y = cholesterol level.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 0 | V2=1, V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 1\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 1 = 1 or 1', 'end': '0'}",Would the patient has high cholesterol if taking of all assigned drugs instead of not taking of any assigned drugs?,"10, 13, 38",no,"10 Analyze the problem from different angles, specifically how the drug assignment, the taking of all drugs, and low cholesterol interrelate. Question the assumptions underlying taking all assigned drugs and how it affects cholesterol level. Evaluate the available information on the confounder and how it potentially impacts the whole situation.
+13 Consider the problem as a part of a larger medical treatment system. Understand the interconnectedness of drug assignment, drug intake, and cholesterol levels. Focus on identifying the underlying causes that might trigger lower cholesterol and the interdependencies of these factors, aiming to view the situation holistically.
+38 Proceed with sequential thinking. First, analyze if the assigned treatment has been adopted entirely by the patient. Then, explore relationships between the active confounder and taking of all assigned drugs. Lastly, investigate how these factors might affect the cholesterol levels.","{
+ ""Understand the problem"": ""First understand that we have a patient who is assigned a drug treatment and has an active confounder and we need to find out if this will lead to him having high cholesterol if he takes all the assigned drugs instead of not taking any."",
+ ""Break down the problem"": ""Identify the two independent variables; the confounder and the drug assignment. The action of taking all assigned drugs depends on these variables and in turn, their action impacts the cholesterol level."",
+ ""Consider the problem as a system"": ""Understand the interdependencies - If confounder is active and drug assignment is take all drugs, it leads to low cholesterol. Conversely, if both conditions are not met, the cholesterol level may be high. Explore the concept of the confounder's role in the whole system."",
+ ""Analyze underlying assumptions"": ""Analyze the assumption that taking all drugs will lead to low cholesterol. Evaluate this in the context of the patient's unique case that includes an active confounder."",
+ ""Step by step analysis"": ""Do a sequential walkthrough - 1) Confirm drug assignment is to take all drugs, 2) Confirm the confounder is active, 3) Explore how these combined factors are likely to lower cholesterol levels."",
+ ""Key question"": ""Would the patient have high cholesterol if taking all assigned drugs instead of not taking any assigned drugs?""
+}","{
+ ""Understand the problem"": ""The problem involves a patient with an active confounder who is assigned a drug treatment. We need to determine if the patient would have high cholesterol if they took all assigned drugs instead of not taking any."",
+ ""Break down the problem"": ""There are two independent variables: the confounder and drug assignment. The patient's act of taking all the drugs depends on these variables and affects their cholesterol level."",
+ ""Consider the problem as a system"": ""The system here involves the interaction of the confounder, drug assignment, and the action of taking all the drugs. The interplay of these variables results in either low or high cholesterol levels."",
+ ""Analyze underlying assumptions"": ""The assumption is that taking all drugs when the confounder is active leads to low cholesterol. This assumption is to be evaluated based on the specific case of the patient."",
+ ""Step by step analysis"": ""The analysis involves confirming if the drug assignment is to take all the drugs and if the confounder is active. With these conditions met, it is likely that the patient's cholesterol would be low."",
+ ""Key question"": ""Would the patient have high cholesterol if they took all assigned drugs versus not taking any drugs?"",
+ ""Final Answer"": ""No, according to the given causal relations, if the patient with an active confounder takes all the assigned drugs, the expected outcome is low cholesterol, not high cholesterol."",
+ ""Brief_final_answer"": ""No""
+}",no,TRUE
+474,tax_smoke_birthWeight-IV-det-counterfactual-model219-spec1-q10,475,We know that confounder active and high cigarette tax causes smoking mother. confounder active and smoking mother causes normal infant birth weight. We observed the cigarette tax is high and confounder inactive.,"{'step0': ""Let V2 = cigarette tax; V1 = unobserved confounders; X = maternal smoking status; Y = infant's birth weight."", 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 1 | V2=1, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 0\nX = V1 and V2\nY = V1 and X', 'step5': 'Y = 0 = 0 and 1', 'end': '0'}",Would the infant is born with a normal weight if smoking mother instead of nonsmoking mother?,"10, 13, 38",no,"10 Analyze the problem from different angles, scrutinize underlying assumptions, and evaluate the information or evidence available. Focus on logical reasoning, evidence-based decision-making, and identifying potential biases or mistakes in thinking within the context of maternal smoking, infant birth weight, and implications of cigarette tax and confounder activity.
+ 
+13 Consider the problem as part of a larger system i.e., the ecosystem of health, economics, and environmental factors that influence maternal smoking, the effect of cigarette tax and confounder activity, and infant birth weight. Identify the primary causes, feedback loops, and interdependencies that influence these aspects and think of comprehensive solutions that address this system.
+
+38 Approach the problem step by step. First, determine the connection between a high cigarette tax, confounder activity, and maternal smoking. Second, ascertain the influence of maternal smoking and confounder activity on infant birth weight. Finally, assess how changes in these variables (e.g., confounder inactivity and maternal smoking status) will alter the end result: the infant's birth weight.","{
+ ""Analyze the problem from different angles"": """",
+ ""Identify the interconnectedness of health, economics, and environmental factors"": """",
+ ""Understand the implications of high cigarette tax and confounder activity"": """",
+ ""Determine the relationship between high cigarette tax, confounder activity and maternal smoking"": """",
+ ""Ascertain the effect of maternal smoking and confounder activity on infant birth weight"": """",
+ ""Identify the changes in variables i.e., confounder inactivity and maternal smoking status"": """",
+ ""Assess how these changes will alter the end result: the infant's birth weight"": """"
+}","{
+ ""Analyze the problem from different angles"": ""The problem involves a series of causal relationships involving the variables of cigarette tax, confounder activity, maternal smoking status, and infant birth weight."",
+ ""Identify the interconnectedness of health, economics, and environmental factors"": ""Maternal smoking can be influenced by the economic aspect (high cigarette tax) and the confounder, which could be a health or environmental factor. This, in turn, can affect the infant's birth weight."",
+ ""Understand the implications of high cigarette tax and confounder activity"": ""High cigarette tax and confounder activity may deter mothers from smoking, which has a consequence on the infant's birth weight."",
+ ""Determine the relationship between high cigarette tax, confounder activity and maternal smoking"": ""The presence of a high cigarette tax and confounder activity causes a mother to smoke. However, in our observation, even though the cigarette tax is high, the confounder is inactive."",
+ ""Ascertain the effect of maternal smoking and confounder activity on infant birth weight"": ""Under normal conditions (with confounder activity), maternal smoking leads to normal infant birth weight. But the confounder is inactive now."",
+ ""Identify the changes in variables i.e., confounder inactivity and maternal smoking status"": ""Confounder activity has changed from active to inactive. And it has been suggested to replace smoking mother with nonsmoking mother."",
+ ""Assess how these changes will alter the end result: the infant's birth weight"": ""Given the causal relationships, the absence of the confounder activity might diminish the tendency of the mother to smoke despite high cigarette tax. If the mother is non-smoker, the causality chain breaks down. Therefore, it is unclear whether this non-smoker mother will give birth to an infant with normal weight."",
+ ""final answer"": ""If the mother does not smoke due to confounder inactivity, we can't securely predict the birth weight of the infant."",
+ ""brief_final_answer"": ""No""
+}",no,TRUE
+308,price-IV-det-counterfactual-model200-spec0-q12,309,We know that increased demand or increased yield per acre causes increased supply. increased demand or increased supply causes increased price. We observed the farm has an increased yield per acre and the demand is high.,"{'step0': 'Let V2 = yield per acre; V1 = demand; X = supply; Y = price.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 1 | V2=1, V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 1\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 1 = 1 or 0', 'end': '1'}",Would there is an increased price if reduced supply instead of increased supply?,"10, 13, 38",yes,"<Begin Adapted Reasoning Modules>
+10 Adapted Critical Thinking: This style involves examining the problem from the perspectives of supply, demand, yield, and price. Question the assumptions of these elements interconnections within the agricultural context, and evaluate the existing causal information. It focuses on logical reasoning based on agricultural economics, observation-based decision-making, and identifying potential biases or drawbacks regarding price dynamics in farming.
+
+13 Adapted Systems Thinking: Consider the problem as an inherent part of the broader agricultural system and comprehend the interconnectedness of different elements such as demand, supply, yield, and pricing. Focus on identifying the causal causes, feedback loops, and dependencies that influence the pricing dynamics, and come up with comprehensive conclusions that address the entire system of agricultural economics.
+
+38 Adapted Step by Step Thinking: Process each component in the cause and effect chain separately. After understanding the cause and effect relationships between demand, supply, yield, and price, identify the effects of changes in each component (increased yield per acre, high demand, decreased supply) on the overall system, especially on the final price.
+</End Adapted Reasoning Modules>","{
+ ""Increased yield per acre and high demand"": """",
+ ""New Assumption: Reduced supply instead of increased supply"": """",
+ ""Adapted Critical Thinking: Examine implications of observations and new assumption"": """",
+ ""Adapted Systems Thinking: Consider the interconnectedness of demand, supply, yield and price"": """",
+ ""Adapted Step by Step Thinking: Increased yield leading to increased supply"": """",
+ ""Step by Step Thinking (continued): High demand influencing supply"": """",
+ ""Step by Step Thinking (continued): Impact of reduced supply on price"": """",
+ ""Cumulative effect on price"":
+}","{
+ ""Increased yield per acre and high demand"": ""Yes"",
+ ""New Assumption: Reduced supply instead of increased supply"": ""Yes"",
+ ""Adapted Critical Thinking: Examine implications of observations and new assumption"": ""Sometimes, an increased yield per acre may cause an increased supply but if there is a new assumption of a reduced supply instead of an increased supply, this indicates that something else is impacting the supply that outweighs the increased yield per acre."",
+ ""Adapted Systems Thinking: Consider the interconnectedness of demand, supply, yield and price"": ""High demand coupled with increased supply usually leads to an increase in price. However, here we have a situation where yield per acre has increased which typically increases supply but supply has somehow reduced. This complex interplay can lead to unpredictable changes in price."",
+ ""Adapted Step by Step Thinking: Increased yield leading to increased supply"": ""Not Applicable due to the new assumption."",
+ ""Step by Step Thinking (continued): High demand influencing supply"": ""Yes"",
+ ""Step by Step Thinking (continued): Impact of reduced supply on price"": ""When supply reduces, all else being equal, it can lead to increased price."",
+ ""Cumulative effect on price"": ""Overall, considering the increased yield, high demand, and the new assumption of reduced supply, it is likely that the price would increase due to high demand and reduced supply."",
+ ""Final answer"": ""The price will increase."",
+ ""Brief_final_answer"": ""Yes""
+}",yes,TRUE
+490,water_cholera-IV-det-counterfactual-model220-spec0-q10,491,We know that high poverty or global water company causes clean water. high poverty or clean water causes cholera contraction. We observed the person is served by a global water company and the region has low poverty.,"{'step0': 'Let V2 = water company; V1 = poverty; X = water quality; Y = cholera.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 1 | V2=1, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 0\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 1 = 0 or 1', 'end': '1'}",Would the person gets cholera if clean water instead of polluted water?,"10, 13, 38",yes,"10 Cholera Contraction Analysis: Engage with the problem by considering it from different perspectives, reassessing assumptions, and reviewing the evidence or information available. It requires a particular focus on deductive reasoning, fact-based decision-making, and identifying potential biases or infallibilities in reasoning. 
+
+13 Cholera Contraction System Thinking: View the problem as a part of the larger public health system, understanding the connection between poverty level, clean water access, and global water companies. Identify underlying causes, feedback loops, and interdependencies that may influence cholera contraction, and consider holistic prevention measures that can potentially deal with the whole system. 
+
+38 Cholera Causality Step-by-Step Thinking: Examine the causal relationship between clean water, global water companies, poverty level, and cholera contraction in a sequential manner. Identify and analyze each cause and effect component step by step.","{
+ ""Cholera Contraction Analysis"": ""Assess the problem considering different perspectives of public health while focusing on fact-based decision making. Scrutinize clean water, global water companies, level of poverty, cholera contraction and their connections."",
+ ""Relevant Assumptions"": ""Ensure validity of assumption: high poverty or global water company causes clean water which subsequently causes cholera contraction. Verify the serving by a global water company and the existence of low poverty in the region."",
+ ""Cholera Contraction System Thinking"": ""Identify the public health system's interconnections. Understand how poverty level, access to clean water, and presence of global water companies influence cholera contraction. Explore these elements' underlying causes, feedback loops, and interdependencies."",
+ ""Data Considerations"": ""Check for available data or information that provide insights such as information on poverty level, prevalence of cholera in similar regions with global water companies, and water cleanliness level in various regions, especially those served by global water companies."",
+ ""Problem Breakdown"": ""Break the problem into manageable parts starting with poverty level, access to clean water, service by global companies and, eventually, cholera contraction."",
+ ""Step-By-Step Analysis"": ""Understand the causal relationship sequentially by starting from clean water's causality and moving through global water companies, poverty level and cholera contraction."",
+ ""Final Summary"": ""Note down all your findings without drawing a conclusion.""
+}","{
+ ""Cholera Contraction Analysis"": ""Given we are positing that high poverty or global water company causes clean water and clean water in turn causes cholera contraction. Our observation is that the person is served by a global water company in a region with low poverty."",
+ ""Relevant Assumptions"": ""The assumptions we're making are that a) high poverty or global water company causes clean water, and b) clean water causes cholera contraction. We're also assuming that the person is being served by a global water company in a region with low poverty."",
+ ""Cholera Contraction System Thinking"": ""This posits the role of poverty and global water companies in the production of clean water, which subsequently can cause cholera contraction. In this specific case, though poverty is low, clean water provision by the global water company is a plausible cause."",
+ ""Data Considerations"": ""We are considering the observation that the person is being served by a global water company in a region with low poverty. Apart from these, the information about the nature of water and the prevalence of cholera in similar settings would be relevant."",
+ ""Problem Breakdown"": ""The problem components are the global water company serving the person, the level of poverty being low and the exploration of whether clean water could cause cholera contraction."",
+ ""Step-By-Step Analysis"": ""The path we're following is a) global water company causes clean water, even in low poverty areas, and b) clean water causes cholera contraction."",
+ ""Final Summary"": ""Given the servicing by global water company and considering the low poverty, it is plausible that the provision of clean water could result in cholera contraction."",
+ ""Conclusive Result"": ""Thus, if clean water is being provided instead of polluted water, then the person has a risk of cholera contraction due to the presence of the global water company."",
+ ""brief_final_answer"": ""Yes""
+}",yes,TRUE
+9,candle-fork-det-counterfactual-model150-spec0-q1,10,We know that blowing out the candle or candle with wax causes dark room. We observed the candle is out of wax.,"{'step0': 'Let V2 = the candle; X = the man in the room; Y = room.', 'step1': 'X->Y,V2->Y', 'step2': 'Y_{X=0} = 0 | V2=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nY = X or V2', 'step5': 'Y = 0 = 0 or 0', 'end': '1'}",Would the room is bright if not blowing out the candle instead of blowing out the candle?,"10, 13, 38",yes,"<Adapted Reasoning Modules>
+
+10 Critical Thinking: This style involves analyzing each step within the scenario, questioning assumptions about candle blowing and wax depletion and then evaluating the effect of each on darkness or brightness. Focus on logical reasoning, evidence-based decision-making, and identifying potential biases or flaws in interpretation.
+
+13 Use systems thinking: Consider the interaction between candle blowing, wax depletion and room brightness as parts of a larger illumination system. Understand the interconnectedness of these elements. In this case, identify the causal effect of either blowing out the candle or depleting the wax, and interdependencies that influence the resultant room brightness or darkness, while developing a holistic thought process that addresses the entire system.
+
+38 Let's think step by step: Start by considering the impact of candle blowing, then separately evaluate wax depletion and its impact. Considering these facts, infer the possible state of room brightness depending on these two actions.","{
+ ""Initial conditions"": ""Candle is out of wax; Candle not blown out"",
+ ""Assumptions"": {
+  ""Blowing out the candle results in a dark room"": ""True"",
+  ""Candle without wax results in a dark room"": ""True"",
+  ""Either blowing out or lack of wax can cause darkness"": ""True""
+ },
+ ""Breakdown"": {
+  ""Analyzing effect of blowing out the candle"": ""Leads to darkness"",
+  ""Analyzing effect of depleting wax"": ""Leads to darkness""
+ },
+ ""Impact Analysis"": {
+  ""Blowing out the candle"": ""Room goes dark"",
+  ""Candle out of wax"": ""Room goes dark"",
+  ""Candle not blown out, but no wax"": ""Room is dark""
+ },
+ ""Inter-dependencies"": {
+  ""Blowing out the candle and effect on brightness"": ""Directly proportional"",
+  ""Wax depletion and effect on brightness"": ""Directly proportional""
+ },
+ ""System's interaction"": ""Both wax depletion and blowing out can independently cause darkness"",
+ ""Final steps"": ""Consider wax depletion and candle blowing as separate actions that lead to darkness.""
+}","{
+ ""Initial conditions"": ""Candle is out of wax; Candle not blown out"",
+ ""Assumptions"": {
+  ""Blowing out the candle results in a dark room"": ""True"",
+  ""Candle without wax results in a dark room"": ""True"",
+  ""Either blowing out or lack of wax can cause darkness"": ""True""
+ },
+ ""Breakdown"": {
+  ""Analyzing effect of blowing out the candle"": ""Leads to darkness"",
+  ""Analyzing effect of depleting wax"": ""Leads to darkness""
+ },
+ ""Impact Analysis"": {
+  ""Blowing out the candle"": ""Room goes dark"",
+  ""Candle out of wax"": ""Room goes dark"",
+  ""Candle not blown out, but no wax"": ""Room is dark""
+ },
+ ""Inter-dependencies"": {
+  ""Blowing out the candle and effect on brightness"": ""Directly proportional"",
+  ""Wax depletion and effect on brightness"": ""Directly proportional""
+ },
+ ""System's interaction"": ""Both wax depletion and blowing out can independently cause darkness"",
+ ""Final steps"": ""Consider wax depletion and candle blowing as separate actions that lead to darkness."",
+ ""Final Answer"": ""The room will be dark even if the candle is not blown out, as there is no wax remaining in the candle"",
+ ""brief_final_answer"": ""Yes""
+}",yes,TRUE
+185,college_wage-IV-det-counterfactual-model177-spec1-q1,186,We know that confounder active and close to a college causes college degree or higher. confounder active and college degree or higher causes high salary. We observed the person lives far from a college and confounder inactive.,"{'step0': 'Let V2 = proximity to a college; V1 = unobserved confounders; X = education level; Y = salary.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 0 | V2=0, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nV1 = 0\nX = V1 and V2\nY = V1 and X', 'step5': 'Y = 0 = 0 and 0', 'end': '1'}",Would the employee has a low salary if high school degree or lower instead of college degree or higher?,"10, 13, 38",yes,"10 Critical Thinking: This model involves assessing the problem from multiple vantage points, probing the assumptions related to college proximity, confounding activity, degree level, and earnings. It places focus on logical reasoning, scrutinizing the evidence or factual base available, and pinpointing possible biases or logical flaws with respect to the person's location, confounder state, and salary.
+
+13 Utilize systems thinking: Interpret the problem as a component of a larger system, appreciating the interconnectedness between various factors such as confounder activity, proximity to a college, educational attainment, and the subsequent impact on the individual's salary. Direct attention towards identifying underlying causes and correlations that influence the problem and constructing comprehensive solutions addressing the college proximity-confounder-degree-salary system in its entirety. 
+
+38 Let’s approach this sequentially: First, ascertain the existing situation of the person concerning college proximity and confounder activity and the resultant effect on the attainment of a college degree or higher. Next, explore the influence of obtaining a college degree or higher on the individual's salary level. Finally, determine the plausible salary of the person when the education level varies from the college degree or higher to high school degree or lower.","{
+    ""Identifying the current state of the person"": {
+        ""Proximity to college"": ""Far"",
+        ""Confounder Status"": ""Inactive""
+    },
+    ""Understanding the impact of these factors on educational attainment"": {
+        ""Probability of achieving a college degree or higher"": ""Low due to confounder inactive and far from college""
+    },
+    ""Exploring the relation of educational attainment on salary"": {
+        ""Impact of having a college degree or higher on salary"": ""Confirmed that confounder active and college degree or higher causes high salary""
+    },
+    ""Assessing the salary scenario when education level is high school degree or lower"": {
+        ""The potential impact on salary"": ""Steps needed to analyze how a lower degree level could influence the salary, given that confounder is inactive and person lives far from a college""
+    }
+}","{
+    ""Identifying the current state of the person"": {
+        ""Proximity to college"": ""Far"",
+        ""Confounder Status"": ""Inactive""
+    },
+    ""Understanding the impact of these factors on educational attainment"": {
+        ""Probability of achieving a college degree or higher"": ""Low""
+    },
+    ""Exploring the relation of educational attainment on salary"": {
+        ""Impact of having a college degree or higher on salary"": ""High""
+    },
+    ""Assessing the salary scenario when education level is high school degree or lower"": {
+        ""The potential impact on salary"": ""Low""
+    },
+    ""Final Answer"": ""Given that the person lives far from a college and the confounder is inactive, the chance of them having a college degree or higher is low. This would lead to a lower salary. So, if the person only has a high school degree or lower, it's probable they would have a low salary."",
+    ""brief_final_answer"": ""Yes""
+}",yes,TRUE
+297,price-IV-det-counterfactual-model200-spec0-q1,298,We know that increased demand or increased yield per acre causes increased supply. increased demand or increased supply causes increased price. We observed the farm has a reduced yield per acre and the demand is low.,"{'step0': 'Let V2 = yield per acre; V1 = demand; X = supply; Y = price.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 0 | V2=0, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nV1 = 0\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 0 = 0 or 0', 'end': '1'}",Would there is a reduced price if reduced supply instead of increased supply?,"10, 13, 38",yes,"10 Critical Thinking: Scrutinize the causal relationships and assumptions surrounding demand, supply, yield per acre and price; consider the implications of a reduced yield per acre and decreased demand using logical reasoning; be vigilant for biases or inaccuracies in the causal links. 
+
+13 Use systems thinking: Regard the problem as a portion of a major agriculture-economic system; concentrate on recognizing vital causes like demand, supply, price and yield per acre; acknowledge feedback loops and their interdependencies in this context, along with creating exhaustive solutions considering the entire system. 
+
+38 Step by step thinking: Apprehend the relationship between demand, supply, yield per acre, and price sequentially; observe how change in one variable impacts others successively.","{
+ ""Understanding the Problem Statement"": """",
+ ""Outline of Causal relationships"": ""increased demand or increased yield per acre -> increased supply -> increased price"",
+ ""Assumptions Analysis"": ""We are assuming that only these variables are affecting the price and that their relationship is always direct"",
+ ""Breakdown problem into simpler statements"": [""The farm has a reduced yield per acre"", ""The demand is low""],
+ ""Systems Thinking Application"": ""Consider the farm's operations as a portion of a larger agriculture-economic system, identify interrelationships"",
+ ""Evaluate scenarios"": [""Analyse the scenario of reduced yield per acre with low demand results in reduced supply"", ""Analyse how reduced supply will affect the price""],
+ ""Step-by-step Logic"": [""Understanding how decreased yield will lead to reduced supply"", ""Understanding how decreased demand will affect the supply"", ""Observing how reduced supply will affect the price""],
+ ""Takeaway from each step"": """",
+ ""Final Reasoning without solution"": """"
+}","{
+ ""Understanding the Problem Statement"": ""Increased demand or supply result in increased price, however, the farm has a reduced yield per acre and demand is low. We need to evaluate the effect of reduced supply on price."",
+ ""Outline of Causal relationships"": ""increased demand or increased yield per acre -> increased supply -> increased price"",
+ ""Assumptions Analysis"": ""We are assuming that only these variables are affecting the price and that their relationship is always direct"",
+ ""Breakdown problem into simpler statements"": [""The farm's yield per acre has decreased"", ""The market's demand is low""],
+ ""Systems Thinking Application"": ""We need to consider how reduced yield and low demand affects the supply, and subsequently the price, in the larger agriculture-economic system"",
+ ""Evaluate scenarios"": [""The decreased yield per acre combined with low demand results in reduced supply"", ""Reduced supply would affect the price by potentially decreasing it""],
+ ""Step-by-step Logic"": [""Reduced yield per acre and low demand should lead to a reduced supply"", ""Reduced supply, unless compensated by an increase in demand or yield, should not lead to an increased price""],
+ ""Takeaway from each step"": [""Reduced yield and demand result in reduced supply"", ""Reduced supply, without other factors to offset, should lead to a decrease in price""],
+ ""Final Reasoning without solution"": ""Given the direct relationships defined, reduced yield per acre and low demand leading to reduced supply should likely result in a reduction in price unless other variables not considered in this problem are at play."",
+ ""Final Answer"": ""Yes, there would be a reduced price if there is reduced supply instead of increased supply."",
+ ""Brief_Final_Answer"": ""Yes""
+}",yes,TRUE
+55,floor_wet-diamond-det-counterfactual-model157-spec1-q3,56,We know that rainy season causes rain and sprinkler off. rain or sprinkler on causes wet ground.,"{'step0': 'Let X = season; V3 = sprinkler; V2 = weather; Y = ground.', 'step1': 'X->V3,X->V2,V2->Y,V3->Y', 'step2': 'Y_{X=1} = 0 | ', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = X\nV3 = not V2\nY = V2 or V3', 'step5': 'Y = [1] = 1 or 0', 'end': '0'}",Would the ground is dry if rainy season instead of dry season?,"10, 13, 38",no,"10 Critical Thinking: Analyze the problem by questioning the premises of wet and dry seasons, connecting rain or sprinkler action with the dry or wet ground, and evaluating the if-then reasoning in the context of this problem. Use evidence-based decision-making, focusing on the logic of causality between the mentioned factors. 
+
+13 Use systems thinking: View the problem as a system where weather conditions (rainy or dry season), actions (sprinkler on or off), and results (wet or dry ground) are interconnected. Consider the underlying causes, actionable correlations, and the interdependencies affecting the ground's condition.
+
+38 Let's think step by step: Identify the different states of the season (rainy or dry), actions (if rain or sprinkler action is present), and final outcome (ground wet or dry). Validate the logic and sequence of the cause and effect mentioned in the problem.","{ 
+""Analyze the problem"": ""Understand the premises of wet and dry seasons, connecting rain or sprinkler action with the ground being dry or wet."", 
+""Break down the problem into smaller parts"": {
+  ""Season states"": ""Identify as rainy or dry"", 
+  ""Actions"": ""Check if rain or sprinkler action is present"", 
+  ""Outcome"": ""Identifying the ground as wet or dry""
+  }, 
+""Systems Thinking"": ""View the problem as a system where weather conditions, actions, and results are interconnected. Consider the underlying causes, actionable correlations, and the dependencies."", 
+""Step by Step Reasoning"": {
+  ""Step 1"": ""Identify the season"", 
+  ""Step 2"": ""Consider the actions of rain or sprinkler"", 
+  ""Step 3"": ""Validate the condition of the ground""
+  } 
+}","{
+""Analyze the problem"": ""Understand the premises of wet and dry seasons, connecting rain or sprinkler action with the ground being dry or wet."", 
+""Break down the problem into smaller parts"": {
+  ""Season states"": ""Identify as rainy or dry"", 
+  ""Actions"": ""Check if rain or sprinkler action is present"", 
+  ""Outcome"": ""Identifying the ground as wet or dry""
+  }, 
+""Systems Thinking"": ""View the problem as a system where weather conditions, actions, and results are interconnected. Consider the underlying causes, actionable correlations, and the dependencies."", 
+""Step by Step Reasoning"": {
+  ""Step 1"": ""Identify the season. Here, it is mentioned as 'ra',
+  ""Step 2"": ""Since it is rainy season, the sprinkler would be off and there would be rain."", 
+  ""Step 3"": ""Because it is raining, the ground would be wet.""
+  },
+""Final Answer"": ""If it was the rainy season instead of the dry season, the ground would not be dry. It would be wet because the rain caused by the rainy season would wet the ground."",
+""Brief_final_answer"": ""No""
+}",no,TRUE
+143,cholesterol-IV-det-counterfactual-model172-spec0-q15,144,We know that confounder active or assignment of drug treatment causes taking of all assigned drugs. confounder active and taking of all assigned drugs causes low cholesterol. We observed the patient is assigned the treatment and confounder active.,"{'step0': 'Let V2 = treatment assignment; V1 = unobserved confounders; X = drug taken; Y = cholesterol level.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 0 | V2=1, V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 1\nX = V1 or V2\nY = V1 and X', 'step5': 'Y = 1 = 1 and 1', 'end': '0'}",Would the patient has high cholesterol if taking of all assigned drugs instead of not taking of any assigned drugs?,"10, 13, 38",no,"<Begin Adapting Modules>
+
+10: Critical Thinking: Analyze the causal relationship from different perspectives, question assumptions, and evaluate the evidence or information concerning the confounder activity, drug treatment, and its effects on cholesterol level.
+
+13: Use systems thinking: Consider the problem as part of a larger system of confounder activity, drug treatment and cholesterol level. Focus on identifying the underlying causes, feedback loops, and interdependencies influencing cholesterol level, and developing holistic understanding that address the system as a whole.
+
+38: Let’s think step by step: 
+Step 1: Identify the confounder active and drug treatment given. 
+Step 2: Evaluate the cause and effect relationship of taking all assigned drugs on cholesterol level.
+Step 3: Analyze the probability of having high cholesterol without taking any assigned drugs based on given causal information.
+
+</End Adapting Modules>","{
+ ""Confounder Activity Status"": """",
+ ""Drug Treatment Assignment"": """",
+ ""Cause and Effect Relationship - Confounder Activity or Drug Treatment vs Taking of all Assigned Drugs"": """",
+ ""Cause and Effect Relationship - Confounder Activity and Taking of all Assigned Drugs vs Low Cholesterol"": """",
+ ""Observations - Confounder Active and Assigned Drug Treatment"": """",
+ ""Consequence If Patient Takes All Assigned Drugs"": """",
+ ""Step by Step Analysis - High Cholesterol Without Taking Any Assigned Drugs"": """"
+}","{
+ ""Confounder Activity Status"": ""Active"",
+ ""Drug Treatment Assignment"": ""Assigned"",
+ ""Cause and Effect Relationship - Confounder Activity or Drug Treatment vs Taking of all Assigned Drugs"": ""Confounder activity or drug treatment causes taking of all assigned drugs"",
+ ""Cause and Effect Relationship - Confounder Activity and Taking of all Assigned Drugs vs Low Cholesterol"": ""Confounder activity and taking of all assigned drugs causes low cholesterol"",
+ ""Observations - Confounder Active and Assigned Drug Treatment"": ""The patient is assigned the treatment and confounder is active"",
+ ""Consequence If Patient Takes All Assigned Drugs"": ""If the patient takes all assigned drugs, there is a cause and effect relationship to have low cholesterol"",
+ ""Step by Step Analysis - High Cholesterol Without Taking Any Assigned Drugs"": ""If the patient doesn't take any assigned drugs, given that the confounder is active, there is no cause and effect relationship to have low cholesterol. Thus, the patient might have high cholesterol."",
+ ""Final Answer"": ""The patient would most likely have high cholesterol if they did not take their assigned drugs, given the facts presented."",
+ ""Brief_Final_Answer"": ""Yes""
+}",yes,FALSE
+168,college_wage-IV-det-counterfactual-model176-spec0-q0,169,We know that confounder active or close to a college causes college degree or higher. confounder active and college degree or higher causes high salary. We observed the person lives far from a college and confounder inactive.,"{'step0': 'Let V2 = proximity to a college; V1 = unobserved confounders; X = education level; Y = salary.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 1 | V2=0, V1=0', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nV1 = 0\nX = V1 or V2\nY = V1 and X', 'step5': 'Y = 0 = 0 and 0', 'end': '0'}",Would the employee has a high salary if high school degree or lower instead of college degree or higher?,"10, 13, 38",no,"10: Critically evaluate the problem from diverse angles, question the assumptions underlying the problem about the confounder, college proximity, and educational degree, and assess the available evidence. This critical thinking style emphasizes logical reasoning and evidence-based outcomes, while pointing out potential biases or flaws in reasoning about salary determination.
+
+13: Picture this problem as a component of a larger system of socioeconomic factors. Focus on identifying the associations between confounder, college proximity, and academic degree, as well as possible feedback loops or interdependencies, to develop comprehensive solutions that address these factors collectively as they influence salary.
+
+38: Let us approach the problem in a structured way: start from the establishment of relations between college proximity and academic achievement, from there to the impact of these two and the confounder on salary, and finally, consider any other potential variables relating to this outcome.","{
+ ""Problem Definition"": ""Analyse the effect of confounder and college degree on the earnings of a person living far away from college"",
+ ""Assumptions of problem"": ""Confounder active or close to a college causes college degree or higher; Confounder active and college degree or higher causes high salary."",
+ ""Breaking down the problem"": ""1. Assess the relationship between confounder and acquisition of a college degree. 2. Evaluate how having a college degree or higher affects salary. 3. Understand the role of the confounder and college proximity in earning a high salary."",
+ ""Critical analysis"": ""Question the link between confounder, college location, and degree level in influencing salary and the premise that someone living far from college and confounder inactive could not have a high salary if their education degree is high school or lower."",
+ ""Systems Thinking for problem"": ""Recognize the issue as part of a complex network of socioeconomic elements influencing income. Consider potential connections between the confounder, proximity to college, level of education, and their combined influence on obtaining a high salary."",
+ ""Potential Relevant data"": ""Details about the active state of the confounder, the individual's proximity to a college, level of education and current salary."",
+ ""Analytical approach"": ""The problem requires logical deductions based on the provided statements and the given conditions. Consider the different scenarios that could result from various combinations of active/inactive confounder, near/far college distance and high school/college degree or higher."",
+ ""Step-by-step action"": ""1. Understand the connections between confounder activity, proximity to college and attainment of a college degree. 2. Analyze how these factors subsequently affect salary and postulate the expected salary of an individual with the provided characteristics.""
+}","{
+ ""Initial condition"": ""The person lives far from a college and confounder is inactive."",
+ ""Change in condition"": ""Would the employee has a high salary if high school degree or lower instead of college degree or higher?"",
+ ""Assessing the Initial Condition"": ""Since the person lives far from a college and confounder is inactive, it is less likely for this person to acquire a college degree or higher based on the problem's assumptions."",
+ ""Analyzing change in condition"": ""Acquiring a high school degree or lower instead of college degree or higher, combined with the inactive confounder, is less likely to result in a high salary based on the problem's assumptions."",
+ ""Final Answer"": ""Given the assumptions, it seems unlikely that this individual would have a high salary if they only have a high school degree or lower instead of college degree or higher, since both living far from a college and having an inactive confounder tend to reduce the likelihood of acquiring a college degree which is necessary for a high salary."",
+ ""Brief_Final_Answer"": ""No""
+}",no,TRUE
+189,college_wage-IV-det-counterfactual-model177-spec1-q5,190,We know that confounder active and close to a college causes college degree or higher. confounder active and college degree or higher causes high salary. We observed the person lives far from a college and confounder active.,"{'step0': 'Let V2 = proximity to a college; V1 = unobserved confounders; X = education level; Y = salary.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=0} = 0 | V2=0, V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 0\nV1 = 1\nX = V1 and V2\nY = V1 and X', 'step5': 'Y = 0 = 1 and 0', 'end': '1'}",Would the employee has a low salary if high school degree or lower instead of college degree or higher?,"10, 13, 38",yes,"<ADAPTED MODULES:> 
+10 Critical Thinking: Analyze this logic problem from multiple perspectives, question the assumptions about the relationships between location, education, and salary, and evaluate the information given. This should focus on logical reasoning, evidence-based decision-making, and the identification of potential biases in the initial reasoning.
+
+13 Use causal reasoning: Consider the problem within the context of its broader causal relationships and dependencies. Focus on identifying the underlying causes that influence the confounder, distance to college, and salary levels, and develop a comprehensive understanding of how these elements interact in our scenario.
+
+38 Step by step causal analysis: Consider the relationship between each pair of variables (e.g., confounder active and distance to college; distance to college and education level; education level and salary), and trace any potential impacts through the sequence to arrive at the final outcome.","{
+ ""Assumptions underlying the problem"": ""Confounder is active, person lives far from a college, education level has an impact on salary"",
+ ""Break down problem"": {
+   ""Initial Scenario"": ""A person living far from schools and confounder active"", 
+   ""Variant Scenario"": ""A person would have a high school degree or lower instead of college degree or higher""},
+ ""Analyze dependencies"": {
+    ""Active confounder and proximity to college causing higher education"": """",
+    ""Higher education and active confounder causing high salary"": """" },
+ ""Step-by-step causal reasoning"": {
+    ""Effect of active confounder and far from college on education level"": """",
+    ""Effect of education level and active confounder on salary"": """",
+    ""Effect of changing education level on salary"": """" }
+}","{
+ ""Assumptions underlying the problem"": ""Confounder is active, person lives far from a college, education level has an impact on salary"",
+ ""Break down problem"": {
+   ""Initial Scenario"": ""Person lives far from a college and confounder is active"", 
+   ""Variant Scenario"": ""The same person has a high school degree or lower instead of a college degree or higher""},
+ ""Analyze dependencies"": {
+    ""Active confounder and proximity to college causing higher education"": ""No, person lives far from a college and confounder is not enough to attain higher education degree"",
+    ""Higher education and active confounder causing high salary"": ""Not applicable, as the person doesn't have a higher education degree"" },
+ ""Step-by-step causal reasoning"": {
+    ""Effect of active confounder and far from college on education level"": ""The person won't attain a higher education degree"",
+    ""Effect of education level and active confounder on salary"": ""As the person doesn't have a higher degree, they won't have a high salary despite having confounder active"",
+    ""Effect of changing education level on salary"": ""The person would have a lower salary if they had a high school degree or lower instead of a college degree or higher"" },
+ ""Final answer"": ""The person would have a lower salary if they had a high school degree or lower instead of a higher degree"",
+ ""brief_final_answer"": ""Yes""
+}",yes,TRUE
+7,alarm-mediation-det-counterfactual-model149-spec1-q3,8,We know that alarm set by husband causes alarm not set by wife. alarm set by husband and alarm set by wife causes ringing alarm.,"{'step0': 'Let X = husband; V2 = wife; Y = alarm clock.', 'step1': 'X->V2,X->Y,V2->Y', 'step2': 'Y_{X=1} = 0 | ', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = not X\nY = X and V2', 'step5': 'Y = 0 = 1 and 0', 'end': '1'}",Would the alarm doesn't ring the next morning if alarm set by husband instead of alarm not set by husband?,"10, 38",yes,"10: This involves analyzing the problem from different scenarios: the alarm being set by the husband, the alarm not being set by the husband, the alarm being set by the wife, and both the husband and wife setting the alarm. It questions the assumptions by asking how each scenario will affect the alarm ringing. It evaluates whether the alarm being set or not set by the husband or wife will influence it ringing or not ringing.
+
+38: Let's unravel the problem step-by-step, looking at each scenario (husband sets alarm, wife sets alarm, both set alarm) and determine which will result in the alarm ringing or not ringing the next morning.
+","{
+ ""Analyzing problem from different scenarios"": {
+    ""Alarm set by husband only"": """",
+    ""Alarm set by wife only"": """",
+    ""Alarm set by both"": """",
+    ""Alarm not set by husband"": """"
+ },
+ ""Assumptions underlying in different scenarios"": {
+    ""Alarm set by husband causing alarm not set by wife"": """",
+    ""Alarm set by husband and wife causing ringing alarm"": """"
+ },
+ ""Breaking down into smaller parts"": {
+    ""How does the alarm being set by the husband affect its ringing?"": """",
+    ""How does the alarm being set by the wife affect its ringing?"": """",
+    ""How does the husband not setting the alarm affect its ringing?"": """"
+ },
+ ""Step-by-step examination"": {
+    ""Step 1 - If the husband sets the alarm"": """",
+    ""Step 2 - If the wife sets the alarm"": """",
+    ""Step 3 - If both set the alarm"": """",
+    ""Step 4 - If the husband does not set the alarm"": """"
+ },
+ ""Key Questions for Critical Thinking"": {
+    ""What if the husband doesn't set the alarm?"": """",
+    ""What if the wife sets the alarm while the husband does not?"": """"
+}
+}","{
+ ""Analyzing problem from different scenarios"": {
+    ""Alarm set by husband only"": ""The alarm will not ring."",
+    ""Alarm set by wife only"": ""The alarm is not guaranteed to ring because this scenario is not discussed in the problem."",
+    ""Alarm set by both"": ""The alarm will ring."",
+    ""Alarm not set by husband"": ""There is no guarantee the alarm will ring because there is no information on what would happen if the wife were to set the alarm or both do not set the alarm.""
+ },
+ ""Assumptions underlying in different scenarios"": {
+    ""Alarm set by husband causing alarm not set by wife"": ""This implies that the wife can't set the alarm when the husband has already done so."",
+    ""Alarm set by husband and wife causing ringing alarm"": ""This implies that both the husband and wife must set the alarm for it to ring.""
+ },
+ ""Breaking down into smaller parts"": {
+    ""How does the alarm being set by the husband affect its ringing?"": ""The alarm will only ring if set by both the husband and wife."",
+    ""How does the alarm being set by the wife affect its ringing?"": ""The alarm will only ring if it is also set by the husband."",
+    ""How does the husband not setting the alarm affect its ringing?"": ""There is no guarantee that the alarm will ring if the husband does not set the alarm.""
+ },
+ ""Step-by-step examination"": {
+    ""Step 1 - If the husband sets the alarm"": ""The wife will not set the alarm. The alarm will not ring."",
+    ""Step 2 - If the wife sets the alarm"": ""Not guaranteed to cause the alarm to ring."",
+    ""Step 3 - If both set the alarm"": ""The alarm will ring."",
+    ""Step 4 - If the husband does not set the alarm"": ""There is no guarantee that the alarm will ring because not enough information is provided.""
+ },
+ ""Key Questions for Critical Thinking"": {
+    ""What if the husband doesn't set the alarm?"": ""There is no information about what will happen to the state of the alarm if only the wife sets it or if neither of them set it."",
+    ""What if the wife sets the alarm while the husband does not?"": ""There is no information provided about this scenario.""
+ },
+ ""Final Answer"": ""No, the alarm would not necessarily ring the next morning if the alarm is set by the husband instead of the alarm not set by the husband."",
+ ""brief_final_answer"": ""No""
+}",no,FALSE
+114,vaccine_kills-diamond-det-counterfactual-model166-spec0-q2,115,We know that vaccination causes having smallpox and severe vaccination reaction. having smallpox and severe vaccination reaction causes smallpox survival.,"{'step0': 'Let X = vaccination status; V3 = vaccination reaction; V2 = getting smallpox; Y = smallpox survival.', 'step1': 'X->V3,X->V2,V2->Y,V3->Y', 'step2': 'Y_{X=1} = 1 | ', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = X\nV3 = V2\nY = V2 and V3', 'step5': 'Y = [1] = 1 and 1', 'end': '1'}",Would the person survives smallpox if vaccination instead of lack of vaccination?,"10, 13, 38",yes,"<Adapted Reasoning Modules>
+
+10. Critical Thinking: Analyze the cause-and-effect relationships between vaccination, smallpox, severe reactions, and survival rate. Challenge assumptions regarding each event's causal relationship, inquire into the validity of the data available, and identify potential fallacies in the interpretation of these relationships.
+
+13. Use systems thinking: View the interaction between vaccination, a potential severe reaction, and survival from smallpox as part of a wider biological and healthcare system. Identify the influences of variables such as vaccination reactions and smallpox contraction on the overall system and strategize vaccinations accordingly.
+
+38. Let's think step by step: First, identify the causal relationship between vaccination and smallpox/severe reactions. Second, understand how having smallpox and severe reactions relates to smallpox survival. Finally, infer the relationship between vaccination and smallpox survival.","{
+ ""Understand the direct effect of vaccination"": """",
+ ""Analyze the relationship between vaccination and smallpox/severe reactions"": """",
+ ""Understand the effect of having smallpox and severe reaction on smallpox survival"": """",
+ ""Use systems thinking to understand the interaction between vaccination, reaction and smallpox survival"": """",
+ ""Use critical thinking to question underlying assumptions and evaluate evidence"": """",
+ ""Step by Step Breakdown on the relationship between vaccination and smallpox survival"": """"
+}","{
+ ""Understand the direct effect of vaccination"": ""Vaccination often prevents the vaccinated person from getting the disease. However, in this problem, vaccination is said to cause smallpox and severe vaccination reaction."",
+ ""Analyze the relationship between vaccination and smallpox/severe reactions"": ""In this particular scenario, having vaccinated results in the person getting smallpox and a severe reaction. This is counter-intuitive as most vaccines do not cause the disease they are meant to prevent but is accepted for the purpose of this problem."",
+ ""Understand the effect of having smallpox and severe reaction on smallpox survival"": ""Here, it is stated that having smallpox and severe reaction leads to smallpox survival. This may be interpreted as the person's body developing a robust response to the smallpox due to the vaccine, that not only causes an immediate reaction but also leads to survival from the disease."",
+ ""Use systems thinking to understand the interaction between vaccination, reaction and smallpox survival"": ""When we analyze the systems involved, vaccination is the initial intervention. It results in smallpox and a severe reaction, which subsequently leads to survival from smallpox. The intermediate state of having smallpox and a severe reaction is a crucial link in this chain."",
+ ""Use critical thinking to question underlying assumptions and evaluate evidence"": ""Although counter to most real-world scenarios, the premises outline necessary links between vaccination, having smallpox, suffering a severe reaction and subsequently surviving smallpox. Given these assumptions, it seems that the vaccination leads to a process that, despite involving short-term suffering, results in long-term survival from smallpox."",
+ ""Step by Step Breakdown on the relationship between vaccination and smallpox survival"": ""The vaccination triggers the onset of smallpox and a severe reaction in the person. As per the assumptions given, this journey of smallpox and a severe reaction paves the way for survival from smallpox. Under these specific conditions and chained events, the conclusion would be that the person, indeed, survives smallpox due to the vaccination."",
+ ""Final Answer"": ""Based on the provided assumptions and directed by the logic presented, if vaccination leads to having smallpox and a severe reaction, and this sequence of events ultimately results in surviving smallpox, then a person vaccinated (instead of not being vaccinated) would survive smallpox."",
+ ""Brief_Final_Answer"": ""Yes""
+}",yes,TRUE
+383,simpson_vaccine-confounding-det-counterfactual-model208-spec0-q7,384,We know that pre-conditions causes vaccine refusal. pre-conditions and getting the vaccine causes recovering from the disease. We observed the person has pre-conditions.,"{'step0': 'Let V1 = pre-conditions; X = vaccination; Y = disease.', 'step1': 'V1->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 0 | V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V1 = 1\nX = not V1\nY = V1 and X', 'step5': 'Y = 1 = 1 and 1', 'end': '0'}",Would the person dies from the disease if getting the vaccine instead of vaccine refusal?,"10, 13, 38",no,"10 Critical Thinking: Scrutinize the causal relationships between preconditions, vaccine refusal, recovery from disease, and death. This involves questioning assumptions about these correlations and evaluating the evidence for them. Concentrate on logical reasoning, making decisions based on the evidence, and identifying potential biases or flaws in the deductive process.
+
+13 Use systems thinking: View the problem as part of a larger health system, understanding the interconnectedness of preconditions, vaccine refusal or acceptance, and disease outcomes. Focus on identifying the underlying causes within the health care system, feedback loops in vaccine distribution and administration, and interdependencies that influence the individual's health outcome. Develop holistic solutions that address the entire system of health care delivery.
+
+38 Step by Step Assessment: Analyze the enumerated steps in the problem, considering the preconditions, the decision to get the vaccine or refuse it, and how both choices relate to recovery or death from the disease. Analyze each step to understand their interconnectedness and their causal effects on the final health outcome.","{
+ ""Given Pre-conditions"": ""The individual has pre-conditions which can lead to vaccine refusal"",
+ ""Causal Relationship 1"": ""Pre-conditions cause vaccine refusal"",
+ ""Causal Relationship 2"": ""Pre-conditions and getting the vaccine lead to recovery from the disease"",
+ ""Key Assumptions"": ""Assumes that pre-conditions do not prevent vaccine administration and that getting vaccinated leads to recovery despite pre-conditions"",
+ ""Question Present"": ""Would the person die from the disease if getting the vaccine instead of refusing it?"",
+ ""Logical Analysis"": ""Assess the logical relationship between having pre-conditions, agreeing to vaccination, and dying from the disease"",
+ ""Systems Thinking Approach"": ""Consider vaccine distribution, administration, and acceptance as parts of a larger health system that affects disease outcomes"",
+ ""Step by Step Assessment"": ""Analyse the situation considering pre-conditions, decision to get vaccinated, and the resulting health outcomes"",
+ ""Relevant Data Needed"": ""Medical histories, statistics on outcomes of vaccinated vs. unvaccinated individuals with preconditions, vaccine efficacy data""
+}","{
+ ""Given Pre-conditions"": ""Yes, the person has pre-conditions."",
+ ""Causal Relationship 1"": ""Pre-conditions can lead to vaccine refusal."",
+ ""Causal Relationship 2"": ""Pre-conditions and getting the vaccine lead to disease recovery."",
+ ""Key Assumptions"": ""Pre-conditions do not prevent the person from getting the vaccine and the vaccine leads to recovery despite pre-conditions."",
+ ""Question Present"": ""If the person with pre-conditions gets the vaccine instead of refusing it, would they die from the disease?"",
+ ""Logical Analysis"": ""Based on the causal relationships, if pre-conditions do not prevent the vaccine administration and vaccine leads to recovery, ideally the person should not die from the disease."",
+ ""Systems Thinking Approach"": ""By accepting the vaccine the person is participating in the larger health system designed to prevent disease related deaths which includes pre-conditions and recovery from disease."",
+ ""Step by Step Assessment"": ""1. The person has pre-conditions. 2. Pre-conditions often lead to vaccine refusal. 3. If the person with pre-conditions gets the vaccine, they are likely to recover. 4. Therefore, if the person with pre-conditions gets the vaccine, they are less likely to die from the disease."",
+ ""Relevant Data Needed"": ""Medical history of person, data on vaccine efficacy, data on recovery rates in patients with pre-conditions that take the vaccine."",
+ ""Final Answer"": ""Based on the given causal relationships and assumptions, it is less likely for the person to die from the disease if they accept the vaccine."",
+ ""Brief Final Answer"": ""No""
+}",no,TRUE
+238,gender_pay-arrowhead-det-counterfactual-model186-spec0-q6,239,We know that male gender or high skill level causes white-collar job. male gender and high skill level and white-collar job causes high salary. We observed the person has a high skill level.,"{'step0': 'Let V2 = skill; X = gender; V3 = occupation; Y = salary.', 'step1': 'X->V3,V2->V3,X->Y,V2->Y,V3->Y', 'step2': 'Y_{X=1} = 1 | V2=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV3 = X or V2\nY = X and V2 and V3', 'step5': 'Y = 1 = 1 and 1 and 1', 'end': '1'}",Would the employee has a high salary if male gender instead of non-male gender?,"10, 13, 38",yes,"10: Analyze the problem from different angles such as considering the effects of high skill level on job type and salary, debate the assumption that male gender can directly cause a high salary, and assess the validity of the link between white collar job and high salary.
+
+13: Evaluate the problem considering it as a part of the larger socio-economic system, identifying the relationship and interdependence between gender, skill level, job type, and salary levels. Focus on finding the root effect of gender and skill level on job type and ultimately on salary.
+
+38: Approach the problem in a systematic manner, focusing firstly on the relationship between gender and job type, then job type and salary. Finally, assess how these relationships could influence the potential salary of a highly skilled individual.","{
+ ""Breaking down the problem"": ""Understanding the causal relationships between gender, skill level, white-collar job and high salary"",
+ ""Analyzing the assumptions"": ""Confirming that male gender or high skill level leads to white-collar jobs and male gender, high skill level, and white-collar job lead to high salary"",
+ ""Data Analysis"": ""Recognising that the individual observed possesses a high skill level"",
+ ""Effect of skill level on job type"": ""Considering how high skill level impacts the type of job (white collar) irrespective of gender"",
+ ""Effect of job type on salary"": ""Examining how having a white collar job may lead to a higher salary"",
+ ""Effect of gender on job type and salary"": ""Analyzing if being male can directly lead to a white-collar job and consequently a high salary"",
+ ""Final scenario"": ""Evaluating the salary of the individual knowing he is highly skilled and assuming he is male""
+}","{
+ ""Breaking down the problem"": ""Given that white-collar job is a result of either male gender or high skill level"",
+ ""Analyzing the assumptions"": ""Given also that high salary is caused by three factors combined: male gender, high skill level and white-collar job"",
+ ""Data Analysis"": ""From the observed data, the person possesses high skill level"",
+ ""Effect of skill level on job type"": ""Because of his high skill level, the person has a white-collar job irrespective of gender"",
+ ""Effect of job type on salary"": ""Having a white-collar job potentially leads to a high salary"",
+ ""Effect of gender on job type and salary"": ""Assuming male gender for the person will add another factor towards achieving a high salary"",
+ ""Final scenario"": ""Given the person is both highly skilled and male, this increases his chances of having a high salary"",
+ ""Final Answer"": ""The person therefore has a higher probability of having a high salary if male gender instead of non-male gender."",
+ ""brief_final_answer"": ""Yes""
+}",yes,TRUE
+111,penguin-mediation-det-counterfactual-model165-spec1-q3,112,We know that taking the elevator causes penguin saddness. taking the elevator or penguin happiness causes penguin death.,"{'step0': 'Let X = my decision; V2 = penguin mood; Y = penguin survival.', 'step1': 'X->V2,X->Y,V2->Y', 'step2': 'Y_{X=1} = 0 | ', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = not X\nY = X or V2', 'step5': 'Y = 1 = 1 or 0', 'end': '0'}",Would the penguin lives if taking the elevator instead of taking the stairs?,"10, 38",no,"<Adapted Reasoning Modules>
+10 Causal Thinking: This involves examining the problem from the viewpoint of cause and effect, pondering assumptions, and assessing the proof or information provided. It concentrates on logical reasoning, validation-based decision-making, and recognizing possible biases or flaws in thinking.
+38 Let’s elucidate each cause and its corresponding effect systematically.
+</Adapted Reasoning Modules>","{
+  ""Assumptions"": ""We are assuming that all conditions applying to penguins stated in the problem exist and are accurate. Such as, taking the elevator causes penguin sadness and either taking the elevator or penguin happiness causes penguin death."",
+  ""Simplified Problem Statement"": ""Does taking the elevator lead to the death of the penguin?"",
+  ""Cause"": ""Taking the elevator."",
+  ""Immediate Effect"": ""Penguin experiences sadness."",
+  ""Secondary Effect"": ""Penguin sadness leads to penguin death according to given conditions. Thus we can infer that the elevator causes penguin death indirectly."",
+  ""Interconnectedness"": ""The act of taking the elevator doesn't directly cause the death of the penguin, but it initiates a sequence of events that ultimately leads to its death."",
+  ""Causal Analysis"": ""According to the given conditions, the penguin dies either due to the direct use of the elevator or when it experiences happiness. However, in our scenario, the penguin is not happy, it is sad - which is a result of using the elevator."",
+  ""Additional Information Required"": ""To further refine the reasoning, we would require more information to understand how exactly the sadness caused by the elevator leads to the death of the penguin and also why happiness might cause death.""
+}","{
+  ""Assumptions"": ""We are assuming that all conditions applying to penguins stated in the problem exist and are accurate. Such as, taking the elevator causes penguin sadness and either taking the elevator or penguin happiness causes penguin death."",
+  ""Simplified Problem Statement"": ""Does taking the elevator lead to the death of the penguin?"",
+  ""Cause"": ""Taking the elevator."",
+  ""Immediate Effect"": ""Penguin experiences sadness."",
+  ""Secondary Effect"": ""Penguin sadness leads to penguin death according to given conditions. Thus we can infer that the elevator causes penguin death indirectly."",
+  ""Interconnectedness"": ""The act of taking the elevator doesn't directly cause the death of the penguin, but it initiates a sequence of events that ultimately leads to its death."",
+  ""Causal Analysis"": ""According to the given conditions, the penguin dies either due to the direct use of the elevator or when it experiences happiness. However, in our scenario, the penguin is not happy, it is sad - which is a result of using the elevator."",
+  ""Additional Information Required"": ""To further refine the reasoning, we would require more information to understand how exactly the sadness caused by the elevator leads to the death of the penguin and also why happiness might cause death."",
+  ""Final Answer"": ""If the penguin takes the elevator, it will lead to its sadness, which according to the given conditions, will lead to its death."",
+  ""Brief_Final_Answer"": ""Yes""
+}",yes,FALSE
+398,smoke_birthWeight-arrowhead-det-counterfactual-model210-spec0-q6,399,We know that smoking mother or good health causes normal infant birth weight. smoking mother and good health and normal infant birth weight causes high infant mortality. We observed the person has good health.,"{'step0': ""Let V2 = health condition; X = maternal smoking status; V3 = infant's birth weight; Y = infant mortality."", 'step1': 'X->V3,V2->V3,X->Y,V2->Y,V3->Y', 'step2': 'Y_{X=1} = 1 | V2=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV3 = X or V2\nY = X and V2 and V3', 'step5': 'Y = 1 = 1 and 1 and 1', 'end': '1'}",Would infant mortality is high if smoking mother instead of nonsmoking mother?,"10, 13, 38",yes,"10 Critical Thinking: This involves evaluating the connections between maternal smoking, good health, normal infant birth weight, and infant mortality, questioning assumptions about these connections, and evaluating the evidence. It focuses on logical reasoning and evidence-based decision-making, questioning if other factors could be contributing to the outcome.
+
+13 Use systems thinking: Consider the interconnectedness of maternal smoking, good health, normal infant birth weight, and infant mortality for this problem. Focuses on understanding the underlying causes, potential feedback loops, and interdependencies of these variables that influence the outcome.
+
+38 Breaking down the problem: Let's analyze the problem step by step, starting from determining how maternal smoking and good health might influence normal infant birth weight, and subsequently, how these factors can cause high infant mortality.","{
+ ""Analyze connections among variables"": ""Evaluate the connections between maternal smoking, good health, normal infant birth weight, and infant mortality"",
+ ""Question assumptions"": ""Question assumptions about these connections and evaluate the evidence."",
+ ""Understand systems thinking"": ""Consider the system of maternal smoking, good health, normal infant birth weight and infant mortality. Understanding underlying causes, potential feedback loops, and interdependencies."",
+ ""Steps of problem breakdown"": ""Step 1: Determine how maternal smoking influences normal infant birth weight, Step 2: Determine how good health influences normal infant birth weight, Step 3: Assess how these combined factors influence infant mortality"",
+ ""Consider other contributing factors"": ""Evaluate if there could be other unconsidered factors affecting the outcome""
+}","{
+ ""Analyze connections among variables"": ""Mother's smoking and good health are the known variables that influence normal infant birth weight. Maternal smoking, good health, and normal infant birth weight are causative factors for high infant mortality."",
+ ""Question assumptions"": ""Assumption : A person is in good health. Question : If the mother smokes, even with good health, will the infant mortality rate be high?"",
+ ""Understand systems thinking"": ""In this system, maternal smoking and good health causes normal infant birth weight. These factors combined can cause high infant mortality. However, the presence of good health alone without maternal smoking is considered."",
+ ""Steps of problem breakdown"": ""Step 1: Good health causes normal infant birth weight. - True, Step 2: Maternal smoking causes normal infant birth weight. - False, Step 3: Good health and normal birth weight causes high infant mortality. - True, Step 4: Maternal smoking combined with good health and normal birth weight causes high infant mortality. - True"",
+ ""Consider other contributing factors"": ""There may also be other underlying factors affecting infant mortality such as genetic disorders, premature birth, maternal alcohol use etc., however these are beyond the scope of provided data"",
+ ""final_answer"": ""Given that the person is in good health, if they are a smoking mother (as opposed to a non-smoking mother), it is probable that the infant mortality would be high since maternal smoking combined with good health and normal birth weight causes high infant mortality"",
+ ""brief_final_answer"": ""Yes""
+}",yes,TRUE
+100,getting_tanned-fork-det-counterfactual-model163-spec1-q4,101,We know that tanning salon treatment and going to the beach causes tanned skin. We observed the person goes to the beach.,"{'step0': 'Let V2 = going to the beach; X = tanning salon treatment; Y = skin.', 'step1': 'X->Y,V2->Y', 'step2': 'Y_{X=0} = 1 | V2=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nY = X and V2', 'step5': 'Y = 0 = 0 and 1', 'end': '0'}",Would the person has tanned skin if no tanning salon treatment instead of tanning salon treatment?,"10, 38",no,"10 Critical Thinking: This involves analyzing the problem's key variables, questioning the assumption that tanning salon treatment and going to the beach always result in tanned skin, and evaluating the evidence available, like the observation that the person goes to the beach. Focus on logical reasoning based on the information given, and identify any potential biases or flaws in thinking.
+
+38 Step-by-step Thinking: Consider each step or process that leads to tanned skin. Understand the individual impact of the tanning salon treatment and going to the beach on the person's skin. Also, take into account the scenario where no tanning salon treatment is involved.","{
+ ""Problem Assumptions"": ""Tanning salon treatment and going to the beach cause tanned skin"",
+ ""Key Variables"": ""Tanning salon treatment, Beach, Tanned Skin"",
+ ""Hypothesis"": ""Going to the beach can cause tanned skin even without tanning salon treatment"",
+ ""Given Observations"": ""The person goes to the beach"",
+ ""Alternative Scenario"": ""Would the person has tanned skin if no tanning salon treatment"",
+ ""Causal Relationship"": ""Impact of the individual factors on tanned skin - tanning salon vs beach"",
+ ""Final Step - Critical Thinking"": ""Analyzing the likelihood of tanned skin without tanning salon but with beach, based on given assumptions, observation and causal reasoning""
+}","{
+ ""Problem Assumptions"": ""Tanning salon treatment and going to the beach cause tanned skin"",
+ ""Key Variables"": {
+    ""Variable 1"": ""Tanning salon treatment"",
+    ""Variable 2"": ""Beach"",
+    ""Outcome"": ""Tanned Skin""
+  },
+ ""Hypothesis"": ""Going to the beach can result in tanned skin even without tanning salon treatment"",
+ ""Given Observations"": ""The person goes to the beach"",
+ ""Alternative Scenario"": ""The person does not go to tanning salon treatment, but goes to the beach"",
+ ""Causal Relationship"": {
+    ""Tanning salon treatment"": ""Causes tanned skin"",
+    ""Beach"": ""Causes tanned skin""
+  },
+ ""Final Step - Critical Thinking"": ""Even without tanning salon treatment, going to the beach can cause tanned skin. Therefore, it is likely that the person has tanned skin, provided that the exposure to the sun at the beach is sufficient for tanning."",
+ ""Final Answer"": ""Yes, the person would likely have tanned skin after going to the beach, even without tanning salon treatment."",
+ ""Brief_Final_Answer"": ""Yes""
+}",yes,FALSE
+159,cholesterol-IV-det-counterfactual-model173-spec1-q15,160,We know that confounder active or assignment of drug treatment causes taking of all assigned drugs. confounder active or taking of all assigned drugs causes low cholesterol. We observed the patient is assigned the treatment and confounder active.,"{'step0': 'Let V2 = treatment assignment; V1 = unobserved confounders; X = drug taken; Y = cholesterol level.', 'step1': 'V1->X,V2->X,V1->Y,X->Y', 'step2': 'Y_{X=1} = 0 | V2=1, V1=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV1 = 1\nX = V1 or V2\nY = V1 or X', 'step5': 'Y = 1 = 1 or 1', 'end': '0'}",Would the patient has high cholesterol if taking of all assigned drugs instead of not taking of any assigned drugs?,"10, 13, 38",no,"10 Critical Thinking: Analyze the causal relations between variables, question assumptions of causality, and evaluate the evidence on these relationships. Focus on logical reasoning, critical interpretation of observations, and identifying potential flaws in causal claims. 
+
+13 Use systems thinking: Consider the problem within the larger context of medical causal relations. Understanding the interconnections between confounders, treatments, and outcomes. Focuses on identifying the underlying causes, confounding feedback loops, and dependencies that influence the patient's health outcome.
+
+38 Let's resolve this causality step by step, identifying each intermediate cause and effect.","{
+ ""Analyze the given problem"": ""We know that confounder active or assignment of drug treatment causes taking of all assigned drugs. confounder active or taking of all assigned drugs causes low cholesterol. We observed the patient is assigned the treatment and confounder active."",
+ ""Identify underlying assumptions"": ""The key assumptions are that the confounder or the drug treatment will result in taking all assigned drugs, and that this, in turn, will cause low cholesterol levels. Another important assumption is that the patient adheres to the assigned treatment."",
+ ""Breakdown problem into simpler parts"": ""The first cause-effect relationship is between the confounder or treatment and taking all assigned drugs. The second cause-effect relationship is between taking assigned drugs or the confounder being active and low cholesterol level."",
+ ""Evaluate evidence on the causal relation"": ""There is no direct evidence provided in the problem statement about the strength or robustness of these causal relationships. Therefore, any conclusion will be based on the assumptions and causal claims stated in the problem."",
+ ""Apply systems thinking"": ""The larger medical context is needed to evaluate if the patient's cholesterol level can actually be influenced by the confounder or the prescribed drugs. The interconnections between the confounder, drug treatment, and patient’s cholesterol level need to be analyzed."",
+ ""Think systematically in each step"": ""First analyze how active confounder or assignment of drug treatment causally affects the intake of prescribed drugs. Then, based on this outcome, analyze how this, in turn, affects the cholesterol level."",
+ ""Identify relevant data that can provide more insights into the problem"": ""There is lack of information about the specific nature of the confounder and specific drugs. Further measurement of responses to the confounder and drug treatment over a period of time can provide more insights into their causal effects on the patient's cholesterol level. Data about the patient's overall health, lifestyle, and other potential confounders can also provide more comprehensive picture.""
+}","{
+ ""Apply the logic"": ""The patient is assigned the treatment and the confounder is active. Following the causal relationships, these conditions lead to taking all assigned drugs. Subsequently, taking all assigned drugs or confounder being active leads to low cholesterol level."",
+ ""Draw conclusion"": ""If the patient follows the assigned treatment and takes all drugs prescribed, it is expected that the patient will have low cholesterol level, assuming the active confounder doesn't otherwise elevate the cholesterol level."",
+ ""Brief_final_answer"": ""No""
+}",no,TRUE
+263,nature_vs_nurture-arrowhead-det-counterfactual-model193-spec1-q7,264,We know that intelligent parents or confounder active causes high parental social status. intelligent parents or confounder active or high parental social status causes intelligent child. We observed confounder active.,"{'step0': ""Let V2 = other unobserved factors; X = parents' intelligence; V3 = parents' social status; Y = child's intelligence."", 'step1': 'X->V3,V2->V3,X->Y,V2->Y,V3->Y', 'step2': 'Y_{X=1} = 0 | V2=1', 'step3': 'Solve for Y, given the evidence and the action', 'step4': 'V2 = 1\nV3 = X or V2\nY = X or V2 or V3', 'step5': 'Y = 1 = 1 or 1 or 1', 'end': '0'}",Would the child is not intelligent if intelligent parents instead of unintelligent parents?,"10, 38",no,"10: Analyze the problem from various logical perspectives, question assumptions about the causes of intelligence, evaluate the evidence provided relating to parental intelligence and status, and the influence of the confounder. Identify potential biases or flaws in reasoning.
+
+38: Follow a logical step-by-step process. Assess the causal relationship between intelligent parents, high parental social status, the active confounder and an intelligent child. Not forgetting to consider the specified observation of the active confounder.","{
+  ""Description of the problem"": ""We need to ascertain whether an intelligent child could be not intelligent if the parents shift from intelligent to unintelligent, given that the confounder is active."",
+  ""Assumptions"": ""Some key assumptions include the parental intelligence and social status directly affects the intelligence of the child, and the activity of the confounder has a definitive role in this effect."",
+  ""Decompose the problem"": {
+    ""Identify the variables"": ""The problem has four main variables: intelligence of parents, the activity of the confounder, the social status of the parents, and the intelligence of the child."",
+    ""Define causal relationships"": ""Intelligence of parents or activity of the confounder causes high social status. High social status or intelligence of parents or the activity of the confounder leads to an intelligent child.""
+  },
+  ""Critical Thinking"": {
+    ""Analyze the logic within the problem"": ""It is stated that either intelligent parents or an active confounder can lead to high social stature, which in turn or along with intelligent parents or an active confounder, could lead to an intelligent child."",
+    ""Evaluate evidence"": ""The evidence provided in the problem supports the above logic."",
+    ""Identify potential biases"": ""The problem assumes direct causation from parents' intelligence to the child's without possible external influences.""
+  },
+  ""Systems Thinking"": {
+    ""Assess the system"": ""The problem exists within a system where parental intelligence and social status directly affect child intelligence."",
+    ""Understand system connections"": ""The various factors connect in causal chains that link parents' intelligence and social status with child intelligence.""
+  },
+  ""Available data"": ""The available data are the direct observations of the active confounder. However, more data points would provide better insights."",
+  ""Analytical problem"": ""The problem involves a logical analysis of causal chains; this may be assisted by modelling techniques."",
+  ""Step by Step Reasoning"": ""First, analyze the parents' intelligence, the social status, and confounder's activity, and secondly, understand their influence on child's intelligence.""
+}","{
+  ""Description of the problem"": ""We need to ascertain whether an intelligent child could still not be intelligent if the parents shift from intelligent to unintelligent, given that the confounder is active."",
+  ""Assumptions"": ""It is assumed that intelligent parents or an active confounder leads to high parental social status, which in turn or along with intelligent parents or an active confounder, leads to child's intelligence."",
+  ""Decompose the problem"": {
+    ""Identify the variables"": ""Parental intelligence, parenting social status, confounder activity, child intelligence"",
+    ""Define causal relationships"": ""Parental intelligence and the confounder lead to changes in the social status, which in combination with parental intelligence and the confounder activity, influence the child's intelligence.""
+  },
+  ""Critical Thinking"": {
+    ""Analyze the logic within the problem"": ""The problem states that intelligent parents or an active confounder will imply high parental social status, and in combination, these factors affect the child's intelligence."",
+    ""Evaluate evidence"": ""The problem provides the activation of the confounder as evidence."",
+    ""Identify potential biases"": ""The problem statement might be biased with the assumption that parental intelligence and social status are the only substantial factors affecting a child's intelligence.""
+  },
+  ""Systems Thinking"": {
+    ""Assess the system"": ""The problem lays within a system where parental intelligence and social status influence child's intelligence, with the confounder playing a potential role in modulating these effects."",
+    ""Understand system connections"": ""The parent's intelligence status and the confounder's activity level directly influence the child's intelligence.""
+  },
+  ""Available data"": ""The evidence about the confounder's active status is known."",
+  ""Analytical problem"": ""The problem requires the analysis of the above variables and their impact on the child's intelligence."",
+  ""Step by Step Reasoning"": ""First, it's crucial to understand the link between parental intelligence (or the confounder's activation) and parental social status. Then, understanding the impact of these variables and their combination on child's intelligence."",
+  ""Final Answer"": ""Given the confounder is active, the change of parental intelligence from intelligent to unintelligent would not necessarily result in the child being not intelligent. There are multiple factors contributing to child's intelligence. Thus, it's not solely dependent on parental intelligence."",
+  ""brief_final_answer"": ""No""
+}",no,TRUE
+,,,,,,,,,,,,23
