@@ -1,0 +1,59 @@
+# crinklebunt, mlack, xlox, chocdoc, zlinz
+Source: cladder template
+
+phenomenon: [chain, collision, confounding, mediation, frontdoor, IV, arrowhead, diamond, diamondcut, fork]
+meta:
+  nonsense: true
+params: {}
+queries: {}
+scm: {}
+story_id: nonsense12
+variable_correspondence: ''
+
+W0: is not mlack
+W0_noun: not mlack
+W0_sentence: a crinklebunt is not mlack
+W0_wherepartial: are not mlack
+W0_wheresentence: those who are not mlack
+W1: is mlack
+W1_noun: mlack
+W1_sentence: a crinklebunt is mlack
+W1_wherepartial: are mlack
+W1_wheresentence: those who are mlack
+Wname: mlack
+X0: is not xlox
+X0_noun: not xlox
+X0_sentence: a crinklebunt is not xlox
+X0_sentence_condition: if the crinklebunt was not xlox instead of xlox
+X0_wherepartial: are not xlox
+X0_wheresentence: those who are not xlox
+X1: is xlox
+X1_noun: xlox
+X1_sentence: a crinklebunt is xlox
+X1_sentence_condition: if the crinklebunt was xlox instead of not xlox
+X1_wherepartial: are xlox
+X1_wheresentence: those who are xlox
+Xname: xlox
+Y0: is not chocdoc
+Y0_noun: not chocdoc
+Y0_sentence: a crinklebunt is not chocdoc
+Y0_wherepartial: are not chocdoc
+Y0_wheresentence: those who are not chocdoc
+Y1: is chocdoc
+Y1_noun: chocdoc
+Y1_sentence: a crinklebunt is chocdoc
+Y1_wherepartial: are chocdoc
+Y1_wheresentence: those who are chocdoc
+Yname: chocdoc
+Z0: is not zlinz
+Z0_noun: not zlinz
+Z0_sentence: a crinklebunt is not zlinz
+Z0_wherepartial: are not zlinz
+Z0_wheresentence: those who are not zlinz
+Z1: is zlinz
+Z1_noun: zlinz
+Z1_sentence: a crinklebunt is zlinz
+Z1_wherepartial: are zlinz
+Z1_wheresentence: those who are zlinz
+Zname: zlinz
+
