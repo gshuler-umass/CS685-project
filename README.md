@@ -1,6 +1,23 @@
 # CS685-project
+## How to Run the Self-Discover Prompts
+The below instructions assume a Linux environment. The commands will be slightly different for Windows.
 
-## How to Run Data Generator
+1. git clone the project repo at the following link:
+
+   https://github.com/gshuler-umass/CS685-project.git
+2. Open a terminal window and navigate to the cladder folder
+3. Create a python venv by running the command `python3 -m venv ./venv`
+4. Activate the venv with the command `source venv/bin/activate`
+5. Run the command `pip install pandas openai`
+6. Obtain an OpenAI API key and save it as an environment variable called **OPENAI_API_KEY**
+7. Obtain a JSON data file from the CLadder HuggingFace repo
+   - https://huggingface.co/datasets/causalnlp/CLadder
+8. Convert the JSON data file to the necessary CSV format using the 'json_csv_conv.py' file in the 'json_csv_conv' folder
+9. Navigate to the 'self-discover' directory and open the 'selfdiscover_1_2_3 - subtype.py' file. Replace the filenames for the variables 'out_file' and 'in_file' on lines 18 and 19 accordingly. Save and close the file.
+10. Run the python file 'selfdiscover_1_2_3 - subtype.py'. The outputted file will be created at the path specified by 'out_file'.
+    - Note: It is recommended to test with a single sample first by changing the num_samples variable in the python file first. 
+
+## How to Run the Data Generator
 The below instructions assume a Linux environment. The commands will be slightly different for Windows.
 1. git clone the project repo at the following link:
 
@@ -26,15 +43,6 @@ fig generate proj
 ```
 10. The data file will be outputted at the path specified in Step 8. Additionally details of the data will be printed in the terminal
 
-## How to Run LLaMa Fine tuning
+## How to Run LLaMa QLoRA
 
-2. Create a hugging face account and get a token
-3. Request access to the LLaMa 2 7B model here -> https://huggingface.co/meta-llama/Llama-2-7b-hf
-3. pip install 'litgpt[all]'
-4. litgpt download --repo_id meta-llama/Llama-2-7b-hf --access_token=[YOUR HF TOKEN]
-    - Note that the download is approx 27 GB
-5. run
-```
-litgpt finetune lora --data JSON --data.json_path data/proj_data.json --checkpoint_dir checkpoints/meta-llama/Llama-2-7b-hf --out_dir data/proj_data-finetuned
-```
-## How to Run LLaMa inference
+## How to Run LLaMa Inference
