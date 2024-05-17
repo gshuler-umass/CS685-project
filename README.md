@@ -44,33 +44,48 @@ fig generate proj
 10. The data file will be outputted at the path specified in Step 8. Additionally details of the data will be printed in the terminal
 
 ## How to Run LLaMa QLoRA
-It is recommended that the QLoRA training be run in Google Colab on at least a T4 High RAM instance
+It is recommended and assumed that the QLoRA training is run in Google Colab on at least a T4 High RAM instance
 
 **Data-Preprocessing**
+
 1. First to preprocess the data, open the Jupyter Notebook file 'data_processing.ipynb'. Change the folder path and filename of the data input file in the line at the top with 'pd.read_json()'.
 2. Run `pip install pandas scikit-learn`.
 3. Run the entire Jupyter Notebook file. The train and test data will be outputted to the folder 'data'. Please leave them in this folder with the filenames 'training_dataset.csv' and 'test_dataset.csv'.
 
 **QLoRA**
+
 4. Open the Jupyter Notebook file 'llama2_finetuning.ipynb' or 'llama3_finetuning.ipynb'.
 5. pip install the various packages found in the file.
 6. Change the variable 'dataset_name' to the filepath of the training_dataset.csv file.
 7. Change the variable 'new_model' to the output folder and filename path of the trained model after the training process
 8. Run the entire notebook and wait for the QLoRA training to finish. On Google Colab Pro T4 High RAM, the approximate training time is 1-2 hours.
 9. The model output will be saved at the folder path and filename specified in the variable 'new_model'.
+
 ## How to Run Inference with the QLoRA'ed LLaMa Models
-It is recommended that the QLoRA inferencing be run in Google Colab on at least a T4 High RAM instance
+It is recommended and assumed that the QLoRA inferencing is run in Google Colab on at least a T4 High RAM instance
 1. Open the Jupyter Notebook file 'llama2_finetuned_inference.ipynb' or 'llama3_finetuned_inference.ipynb'.
 2. pip install the various packages found in the file.
 3. Change the variable 'new_model' to the folder and filepath of the QLoRA'ed model that was outputted during the QLoRA training.
 4. Change the variable 'dataset_name' to the filepath of the test_dataset.csv file.
 5. Run the entire notebook and wait for the model to make all the inferences on the test dataset. On a Google Colab Pro T4 High RAM, the approximate inferencing time is 3-4 hours.
 6. The output will be saved to the 'results' folder with the filename 'output_data_llamaX_finetuned.csv' (where X is 2 or 3).
+
 ## How to Run Inference with the Base LLaMa Models
-It is recommended that the base model inferencing be run in Google Colab on at least a T4 High RAM instance.
+It is recommended and assumed that the base model inferencing is run in Google Colab on at least a T4 High RAM instance.
 1. Open the Jupyter Notebook file 'llama2_inference.ipynb' or 'llama3_inference.ipynb'.
 2. pip install the various packages found in the file.
 3. Change the variable 'dataset_name' to the filepath of the test_dataset.csv file.
 4. Paste in your Together API Key in the line where the Together API client is instantiated.
 5. Run the entire notebook and wait for the model behind the API to make all the inferences on the test dataset. On a Google Colab Pro T4 High RAM, the approximate inferencing time is 1-2 hours.
 6. The output will be saved to the 'results' folder with the filename 'output_data_llamaX.csv' (where X is 2 or 3).
+
+## Models
+Our QLoRA'ed LLaMa 2 7b and LLaMa 3 8b models are available on HuggingFace at the below links:
+
+**LLaMa 2 7b**
+
+https://huggingface.co/dasanindya15/llama2-7b_qlora_Cladder_v1
+
+**LLaMa 3 8b**
+
+https://huggingface.co/dasanindya15/llama3-8b_qlora_Cladder_v1
